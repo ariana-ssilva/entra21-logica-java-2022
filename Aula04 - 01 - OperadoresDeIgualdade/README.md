@@ -3,7 +3,7 @@
 
 #### Types :
 
-> - == to compare equality (= it's to assing, == it's to compare
+> - == to compare equality (= it's to assing, == it's to compare);
 
 
 ```

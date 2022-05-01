@@ -4,20 +4,19 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		// Faça um programa que converta graus Celsius em Fahrenheit. A formula para
-		// converter é multiplicar a temperatura celsius por 1.8 e somar 32 ao resultado
-		// */
+	/* Write a program that converts degrees Fahrenheit to Celsius.
+	 * The formula for converting is subtract temperature by 32 and divide by 1.8*/
 
-		double grausFahrenheit, grausConvertidosEmCelsius;
+		double fahrenheitDegrees, degressToCelsius;
 
-		Scanner entrada = new Scanner(System.in);
+		Scanner enter = new Scanner(System.in);
 
-		System.out.println("Digite a temperatura a ser convertida em graus Celsius:");
-		grausFahrenheit = entrada.nextFloat();
+		System.out.println("Enter the temperature in Fahrenheit:");
+		fahrenheitDegrees = enter.nextFloat();
 
-		grausConvertidosEmCelsius = 32 - (grausFahrenheit / 1.8);
+		degressToCelsius = 32 - (fahrenheitDegrees / 1.8);
 
-		System.out.println("A temperatura é de " + grausConvertidosEmCelsius + "°");
+		System.out.println("The temperature converted to Celsius is " + degressToCelsius + "°");
 
 	}
 

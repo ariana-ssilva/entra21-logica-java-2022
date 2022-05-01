@@ -3,7 +3,6 @@ package br.com.entra21.exercicio.calculadora;
 import java.util.Scanner;
 
 public class Main {
-
 	public static void main(String[] args) {
   /*Write a calculator program. Capture username and 2 
   numeric values. After capturing the numbers, individually display the result using the operators (+, -, / and *).*/

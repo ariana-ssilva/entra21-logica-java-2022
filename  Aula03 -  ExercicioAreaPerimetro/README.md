@@ -10,5 +10,5 @@ The perimeter is obtained by adding all the vertices of the rectangle.
 
 </center>
 
- <form style="background-color:green,action="https://replit.com/@ariana-ssilva/AreaPerimeter#Main.java" method="get" target="_blank"><button type="submit">Run code</button></form>
+[Run Code](https://replit.com/@ariana-ssilva/AreaPerimeter#Main.java)
 

@@ -5,37 +5,42 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-	//Faça um programa de calculadora.Capture o nome do usuário e 2 valores numéricos. 
-	//Após a captura dos numeros,exiba de forma individual o resultado utilizando os operadores (+,-,/ e*) //
+  /*Write a calculator program. Capture username and 2 
+  numeric values. After capturing the numbers, individually display the result using the operators (+, -, / and *).*/
 
 	    float num1, num2;
+      String nameUser;
+    
+	    Scanner enter = new Scanner(System.in);
 
-	    Scanner entrada = new Scanner(System.in);
+      System.out.println("Enter your name:");
+      nameUser = enter.nextLine();
 
-	    System.out.println("Digite o primeiro número:");
-	    num1 = entrada.nextFloat();
+	    System.out.println("Enter the first number:");
+	    num1 = enter.nextFloat();
 
-	    System.out.println("Digite o segundo número:");
-	    num2 = entrada.nextFloat();
+	    System.out.println("Enter the second number:");
+	    num2 = enter.nextFloat();
 	    
-	    System.out.println(" - ADIÇÃO");
+	    System.out.println(" - ADDITION");
 	      System.out.println(" " + num1+ " + " + " " + num2 + " = " + " " + (num1 + num2));
 	        System.out.println("");
 	    
-	    System.out.println(" - SUBTRAÇÃO");
+	    System.out.println(" - SUBTRACTION");
 	      System.out.println(" " + num1+ " - " + " " + num2 + " = " + " " + (num1 - num2));
 	        System.out.println("");
 
-	    System.out.println(" - DIVISÃO");
+	    System.out.println(" - DIVISION");
 	      System.out.println(" " + num1+ " ÷ " + " " + num2 + " = " + " " + (num1 / num2));
 	        System.out.println("");
 
-	    System.out.println(" - MULTIPLICAÇÃO");
+	    System.out.println(" - MULTIPLICATION");
 	      System.out.println(" " + num1+ " x " + " " + num2 + " = " + " " + (num1 * num2));
 	        System.out.println("");
 
-	    System.out.println(" - RESTO DA DIVISÃO");
+	    System.out.println(" - REMAINDER AFTER DIVISION");
 	      System.out.println(" " + num1+ " % " + " " + num2 + " = " + " " + (num1 % num2));	
 	}
 
 }
+

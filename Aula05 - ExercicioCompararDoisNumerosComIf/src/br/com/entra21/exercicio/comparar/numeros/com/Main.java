@@ -24,22 +24,5 @@ public class Main {
 		} else {
 			System.out.println("O segundo numero é maior ");
 		}
-		
-		System.out.println("Capturar ano de nascimento e informar se já tem idade para votar");
-		short anoNascimento, calculo;
-		
-		
-		System.out.println("Informe o ano de nascimento");
-		anoNascimento = entrada.nextShort();
-		
-		calculo = (short) (2022 - anoNascimento);
-		
-		if (calculo >= 16) {
-			System.out.println("Já pode votar");
-		} else {
-			System.out.println("Te aquieta vivente");
-		}
-		System.out.println(calculo>=16?"VOTE!":"PERA AE");
 	}
-
 }

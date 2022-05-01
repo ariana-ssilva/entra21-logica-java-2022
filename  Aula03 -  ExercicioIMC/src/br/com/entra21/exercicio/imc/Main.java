@@ -5,7 +5,10 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-	//Faça um programa que calcule o IMC> O IMC é o Índice de Massa Corpórea e é calculado com a formula peso dividido pela altura ao quadrado*/
+//Faça um programa que calcule o IMC. 
+//O IMC é o Índice de Massa Corpórea e é calculado com a formula peso dividido
+//pela altura ao quadrado*/
+		
 
 	    float altura, peso, imc;
 

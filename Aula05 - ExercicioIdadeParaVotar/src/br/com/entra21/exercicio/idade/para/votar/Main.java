@@ -1,5 +1,4 @@
 package br.com.entra21.exercicio.idade.para.votar;
-
 import java.util.Scanner;
 
 public class Main {
@@ -9,7 +8,6 @@ public class Main {
 		short anoNascimento, calculo;
 		
 		Scanner entrada = new Scanner(System.in);
-		
 		
 		System.out.println("Informe o ano de nascimento");
 		anoNascimento = entrada.nextShort();
@@ -24,5 +22,4 @@ public class Main {
 		System.out.println(calculo>=16?"VOTE!":"PERA AE");
 
 	}
-
 }

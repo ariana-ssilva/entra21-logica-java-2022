@@ -31,7 +31,5 @@ public class Main {
 		//4 - Faça um programa que informe se o 1º numero é menor ou igual que o 2º numero
 		resultado = numero1 <= numero2;
 		System.out.println("O numero "+ numero1 + " é menor/igual que o numero "+ numero2 + "? " + resultado);
-
 	}
-
 }

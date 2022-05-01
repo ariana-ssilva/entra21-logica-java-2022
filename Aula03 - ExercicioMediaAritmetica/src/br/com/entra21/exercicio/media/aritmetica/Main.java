@@ -5,7 +5,10 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		//Faça um programa que calcule a média aritmética de um aluno. Capture o nome do aluno e valor de suas 3 notas para informar a média a formula da média é a soma das notas dividido pela quantidade de notas //
+	/*Faça um programa que calcule a média aritmética de um aluno.
+	Capture o nome do aluno e valor de suas 3 notas para informar
+	a média a formula da média é a soma das notas dividido pela quantidade
+	de notas */
 
 	    float nota1, nota2, nota3, mediaAritmetica;
 	    String nomeAluno;
@@ -26,7 +29,7 @@ public class Main {
 
 	    mediaAritmetica = (nota1 + nota2 + nota3) / 3;
 
-	    System.out.println("A média do aluno "+ nomeAluno + "é de : " + mediaAritmetica);    
+	    System.out.println("A média do aluno "+ nomeAluno + " é de : " + mediaAritmetica);    
 	    	
 	}
 

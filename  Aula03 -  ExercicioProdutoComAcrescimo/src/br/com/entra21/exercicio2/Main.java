@@ -19,7 +19,8 @@ public class Main {
 		
 		precoComAumento = precoOriginal + (precoOriginal*65/100);
 		
-		System.out.println("O preço do produto "+ nomeProduto+ " com aumento de 65& é de :" + precoComAumento);
+		System.out.println("O preço do produto "+ nomeProduto+ 
+				" com aumento de 65& é de :" + precoComAumento);
 		
 		
 	}

@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		  //Faça um programa de calculadora.Capture o nome do usuário e 2 valores numéricos. Após a captura dos numeros,exiba de forma individual o resultado utilizando os operadores (+,-,/ e*) //
+	//Faça um programa de calculadora.Capture o nome do usuário e 2 valores numéricos. 
+	//Após a captura dos numeros,exiba de forma individual o resultado utilizando os operadores (+,-,/ e*) //
 
 	    float num1, num2;
 

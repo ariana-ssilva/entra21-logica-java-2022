@@ -5,22 +5,23 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		float area, perimetro, base, altura;
+	    float area, perimeter, base, height;
 
-		Scanner entrada = new Scanner(System.in);
+			Scanner enter = new Scanner(System.in);
 
-		System.out.println("Digite a base para o retangulo: ");
-		base = entrada.nextFloat();
-		System.out.println("Digite a altura para o retangulo: ");
-		altura = entrada.nextFloat();
+			System.out.println("Enter a base for the rectangle: ");
+			base = enter.nextFloat();
+	    
+			System.out.println("Enter a height for the rectangle: ");
+			height = enter.nextFloat();
 
-		area = base * altura;
+			area = base * height;
 
-		System.out.println("A altura é: " + area);
+			System.out.println("The height is: " + area);
 
-		perimetro = base * 2 + altura * 2;
+			perimeter = base * 2 + height * 2;
 
-		System.out.println("O perímetro é: " + perimetro);
+			System.out.println("The perimeter is: " + perimeter);
 
 	}
 

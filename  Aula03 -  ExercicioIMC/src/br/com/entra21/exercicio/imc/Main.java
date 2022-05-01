@@ -5,23 +5,21 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-//Faça um programa que calcule o IMC. 
-//O IMC é o Índice de Massa Corpórea e é calculado com a formula peso dividido
-//pela altura ao quadrado*/
+ /*Write a program to calculate BMI.
+ BMI is the Body Mass Index and is calculated by using the formula : weight divided by height squared*/
 		
+    float height, weight, bmi;
 
-	    float altura, peso, imc;
+    Scanner enter = new Scanner (System.in);
+	    System.out.println("Enter your height (put a point or comma):");
+	    height = enter.nextFloat();
 
-	    Scanner entrada = new Scanner (System.in);
-	    System.out.println("Digite a sua altura:");
-	    altura = entrada.nextFloat();
+	    System.out.println("Enter your weight:");
+	    weight = enter.nextFloat();
 
-	    System.out.println("Digite o seu peso:");
-	    peso = entrada.nextFloat();
+	    bmi = weight / (height  * height);
 
-	    imc = peso / (altura  * altura);
-
-	    System.out.println("Seu IMC é de : " + imc);
+	    System.out.println("BMI is: " + bmi);
 
 	}
 

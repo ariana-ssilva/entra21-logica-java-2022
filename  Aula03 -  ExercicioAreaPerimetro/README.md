@@ -9,3 +9,12 @@ The perimeter is obtained by adding all the vertices of the rectangle.
 ![Gif AreaAndPerimeter](/gif_img/3.1.gif)
 
 </center>
+
+<div style="text-align:center;
+            color:white;
+            background-color:#228B22;
+            border: none;
+            border-radius: 3px;
+            width: 90px;
+<ahref="https://replit.com/@ariana-ssilva/AreaPerimeter#Main.java"<button style="display:block;" id="runCode">Run Code</button></a>
+</div>

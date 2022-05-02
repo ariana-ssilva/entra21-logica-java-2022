@@ -5,31 +5,41 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		// 1 - Faça um programa que informe se o 1º numero é maior que o 2º numero
-		
-		float numero1, numero2;
-		boolean resultado;
-		
-		Scanner entrada = new Scanner(System.in);
-		System.out.println("Digite o primeiro numero:");
-		numero1 = entrada.nextFloat();
-		
-		System.out.println("Digite o segundo numero:");
-		numero2 = entrada.nextFloat();
-		
-		resultado = numero1 > numero2;
-		System.out.println("O numero "+ numero1 + " é maior que o numero "+ numero2 + "? " + resultado);
-		
-		// 2 - Faça um programa que informe se o 1º numero é maior ou igual que o 2º numero
-		resultado = numero1 >= numero2;
-		System.out.println("O numero "+ numero1 + " é maior/igual ao numero "+ numero2 + "? " + resultado);
-		
-		// 3 - Faça um programa que informe se o 1º numero é menor que o 2º numero
-		resultado = numero1 < numero2;
-		System.out.println("O numero "+ numero1 + " é menor que o numero "+ numero2 + "? " + resultado);
-		
-		//4 - Faça um programa que informe se o 1º numero é menor ou igual que o 2º numero
-		resultado = numero1 <= numero2;
-		System.out.println("O numero "+ numero1 + " é menor/igual que o numero "+ numero2 + "? " + resultado);
+		// Write a program that informs if the 1st number is bigger than the 2nd number
+
+		float number1, number2;
+		boolean result;
+
+		Scanner enter = new Scanner(System.in);
+		System.out.println("Enter the first number:");
+		number1 = enter.nextFloat();
+
+		System.out.println("Enter the second number:");
+		number2 = enter.nextFloat();
+
+		result = number1 > number2;
+		System.out.println("The number " + number1 + " is bigger than the number " + number2 + "? "
+				+ result);
+
+		 /* 2 - Write a program that informs if the 1st number is greater than or equal
+		 * to the 2nd number
+		 */
+
+		result = number1 >= number2;
+		System.out.println("The number " + number1 + " is bigger/equal to the number " + number2 + "? "
+				+ result);
+
+		/* 3 - Write a program that informs if the 1st number is smaller than the 2nd
+		 * number
+		 */
+		result = number1 < number2;
+		System.out.println("The number " + number1 + " is smaller than the number " + number2 + "? " 
+				+ result);
+
+		/* 4 - Write a program that informs if the 1st number is smaller than or equal  to the 2nd
+		 number*/
+		result = number1 <= number2;
+		System.out.println("The number " + number1 + " is smaller/equal to the number  " + number2 + "? " 		
+				+ result);
 	}
 }

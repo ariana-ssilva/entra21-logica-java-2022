@@ -1,9 +1,20 @@
-# Exercicio comparando dois números - operador relacional
+# Exercise 4.1 - Comparing two number's values using relational operator
 
-Faça um programa que informe se o 1º numero é maior que o 2º numero
-Faça um programa que informe se o 1º numero é maior ou igual que o 2º numero
-Faça um programa que informe se o 1º numero é menor que o 2º numero
-Faça um programa que informe se o 1º numero é menor ou igual que o 2º numero
+ Write a program that informs if the 1st number is bigger than the 2nd number;
+
+Write a program that informs if the 1st number is greater than or equal to the 2nd number;
+
+Write a program that informs if the 1st number is smaller than the 2nd number;
+
+Write a program that informs if the 1st number is smaller than or equal  to the 2nd number.
+
+<center>
+
+![Gif Comparing two number's values using relational operators ](/gif_img/4.2.gif)
+
+</center>
+
+[Run Code](https://replit.com/@ariana-ssilva/Main-7#Main.java)
 
 
 

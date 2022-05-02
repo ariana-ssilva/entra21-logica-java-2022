@@ -1,4 +1,4 @@
-# Exercise 4.1 - Comparing two number's value
+# Exercise 4.1 - Comparing two number's values
 
 Write a program to compare 2 numbers and inform if the 1st is equal to the 2nd number.
 
@@ -6,7 +6,7 @@ Write a program to compare 2 numbers and inform if the 1st is different from the
 
 <center>
 
-![Gif Comparing two number's value](/gif_img/4.1.gif)
+![Gif Comparing two number's values](/gif_img/4.1.gif)
 
 </center>
 

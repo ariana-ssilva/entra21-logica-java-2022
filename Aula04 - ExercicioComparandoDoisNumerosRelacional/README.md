@@ -1,4 +1,4 @@
-# Exercise 4.1 - Comparing two number's values using relational operator
+# Exercise 4.2 - Comparing two number's values using relational operator
 
  Write a program that informs if the 1st number is bigger than the 2nd number;
 

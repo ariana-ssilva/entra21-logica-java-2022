@@ -5,38 +5,36 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		//Faça um programa que capture 3 informações o nome,  idade e altura. 
-		//Deve ser informado se o usuário é maior ou igual que 170cm E tem é maior de idade (utilizar o &&)
-		
-		String nome;
-		byte idade;
-		float altura;
-		boolean resultado;
-		
-		Scanner entrada = new Scanner (System.in);
-		
-		System.out.println("Digite o nome:");
-		nome = entrada.nextLine();
-		
-		System.out.println("Digite a idade:");
-		idade = entrada.nextByte();
-		
-		System.out.println("Digite a altura em centímetros:");
-		altura = entrada.nextFloat();
-		
-		resultado = (altura >= 170) && (idade >= 18);
-		
-		System.out.println("O usuário " + nome + " tem 1,70 cm ou mais de altura e é maior de 18 anos?");
-		System.out.println("A altura é "+ altura + " e a idade é de " + idade + " " + resultado);
-		
-		// Faça um programa que capture 3 informações o nome,  idade e altura.
-		// Deve ser informado se o usuário é maior ou igual que 170cm OU tem é maior de idade (utilizar o ||)
-		
-		resultado = (altura >= 170) ||(idade >= 18);
-		
-		System.out.println("O usuário " + nome + " tem 1,70 cm ou mais de altura ou é maior de 18 anos?");
-		System.out.println("A altura é "+ altura + " e a idade é de " + idade + " " + resultado);
-		
-	}
+		 /*Write a program that requests 3 informations: name, age and height. It must
+		 * be informed if the user is taller than or equal to 170cm AND is over eighteen
+		 * (use the && operator).*/
 
+		String name;
+		byte age;
+		float height;
+		boolean result;
+
+		Scanner enter = new Scanner(System.in);
+
+		System.out.println("Enter the name:");
+		name = enter.nextLine();
+
+		System.out.println("Enter the age:");
+		age = enter.nextByte();
+
+		System.out.println("Enter the height:");
+		height = enter.nextFloat();
+
+		result = (height >= 1.70) && (age >= 18);
+
+		System.out.println("> Is  " + name + " 1,70cm or taller than, AND is over eighteen?");
+		System.out.println(">> The height is " + height + " and the age is " + age + ". " + result);
+
+		/*It must be informed if the user is taller than or equal to 170cm OR is over eighteen
+		 * (use the || operator).*/
+		result = (height >= 1.70) || (age >= 18);
+		
+		System.out.println("> Is  " + name + " 1,70cm or taller than, OR is over eighteen?");
+		System.out.println(">> The height is " + height + " and the age is " + age + ". " + result);
+	}
 }

@@ -5,7 +5,7 @@ After capturing the numbers, individually display the result using the operators
 
 <center>
 
-![Gif AreaAndPerimeter](/gif_img/3.2.gif)
+![Gif  Calculator](/gif_img/3.2.gif)
 
 </center>
 

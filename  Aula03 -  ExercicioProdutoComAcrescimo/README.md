@@ -6,7 +6,7 @@ increase = product + product * (60/100).
 
 <center>
 
-![Gif AreaAndPerimeter](/gif_img/3.7.gif)
+![Gif Calculating the sale price](/gif_img/3.7.gif)
 
 </center>
 

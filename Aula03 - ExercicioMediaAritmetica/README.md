@@ -6,7 +6,7 @@ is : the sum of the grades divided by the amount of notes.
 
 <center>
 
-![Gif AreaAndPerimeter](/gif_img/3.6.gif)
+![Gif Calculating arithmetic average](/gif_img/3.6.gif)
 
 </center>
 

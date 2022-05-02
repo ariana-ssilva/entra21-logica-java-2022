@@ -4,7 +4,7 @@ Write a program that converts degrees Fahrenheit to Celsius.The formula for conv
 
 <center>
 
-![Gif AreaAndPerimeter](/gif_img/3.3.gif)
+![Gif Converting Fahrenheit to Celsius](/gif_img/3.3.gif)
 
 </center>
 

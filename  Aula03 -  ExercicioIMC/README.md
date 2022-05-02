@@ -4,7 +4,7 @@ Write a program to calculate BMI. BMI is the Body Mass Index and is calculated b
 
 <center>
 
-![Gif AreaAndPerimeter](/gif_img/3.5.gif)
+![Gif Calculating Body Mass Index (BMI)](/gif_img/3.5.gif)
 
 </center>
 

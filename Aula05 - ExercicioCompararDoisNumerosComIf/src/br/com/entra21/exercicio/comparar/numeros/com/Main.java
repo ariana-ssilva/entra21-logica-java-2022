@@ -5,24 +5,25 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		//Capturar 2 números e informar qual é o maior
+
+		//Insert 2 numbers and inform which one is greater
 		
-		Scanner entrada = new Scanner(System.in);
+		Scanner enter = new Scanner(System.in);
 		
-		byte numeroA, numeroB;
+		byte numberA, numberB;
 		
-		System.out.println("Digite o primeiro numero:");
-		numeroA = entrada.nextByte();
+		System.out.println("Enter the first number:");
+		numberA = enter.nextByte();
 		
-		System.out.println("Digite o segundo numero:");
-		numeroB = entrada.nextByte();
+		System.out.println("Enter the second number:");
+		numberB = enter.nextByte();
 		
-		if(numeroA > numeroB) {
-			System.out.println("O primeiro numero é maior");
-		} else if(numeroA == numeroB){
-			System.out.println("Os numeros são iguais");
+		if(numberA > numberB) {
+			System.out.println("The firts number is greater.");
+		} else if(numberA == numberB){
+			System.out.println("Both numbers are equal.");
 		} else {
-			System.out.println("O segundo numero é maior ");
+			System.out.println("The second is greater.");
 		}
 	}
 }

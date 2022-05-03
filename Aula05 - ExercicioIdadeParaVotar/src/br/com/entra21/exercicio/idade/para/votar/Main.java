@@ -4,22 +4,22 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("Capturar ano de nascimento e informar se já tem idade para votar");
-		short anoNascimento, calculo;
+		System.out.println("Insert the birth year to know if you can vote:");
+		short birthYear, canVote;
 		
-		Scanner entrada = new Scanner(System.in);
+		Scanner enter = new Scanner(System.in);
 		
-		System.out.println("Informe o ano de nascimento");
-		anoNascimento = entrada.nextShort();
+		System.out.println("Enter the birth year:");
+		birthYear = enter.nextShort();
 		
-		calculo = (short) (2022 - anoNascimento);
+		canVote = (short) (2022 - birthYear);
 		
-		if (calculo >= 16) {
-			System.out.println("Já pode votar");
+		if (canVote >= 16) {
+			System.out.println("You can vote");
 		} else {
-			System.out.println("Te aquieta vivente");
+			System.out.println("Calm down!");
 		}
-		System.out.println(calculo>=16?"VOTE!":"PERA AE");
+		System.out.println(canVote>=16?"VOTE!":"WAIT A LITTLE MORE");
 
 	}
 }

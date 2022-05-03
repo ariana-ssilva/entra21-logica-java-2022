@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		/*Insert 3 grades to calculate the student's average and 
-		 * report if he passed or failed*/
+		 * report if he/she passed or failed*/
 		
 		float grade1, grade2, grade3, average;
 		String name;

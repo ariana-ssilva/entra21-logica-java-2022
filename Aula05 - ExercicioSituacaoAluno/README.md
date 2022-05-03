@@ -1,5 +1,5 @@
 # Exercise 5.3 - Student's average using IfElse
-Insert 3 grades to calculate the student's average and report if he passed or failed.
+Insert 3 grades to calculate the student's average and report if he/she passed or failed.
 
 <center>
 

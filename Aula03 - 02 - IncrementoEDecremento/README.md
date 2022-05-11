@@ -9,7 +9,7 @@ the operand.While using the prefix form, we first update the value of the operan
 
 #### Example using the pre-increment :
 
-```
+```java
 int add = 1;
 ++add; // add = 2
 int number = ++add; // add = 3, number =3
@@ -18,7 +18,7 @@ int number = ++add; // add = 3, number =3
 
 #### Example using the pre-decrement :
 
-```
+```java
 int add = 2
 -- add; // add = 2
 int number = --add; // add = 0, number = 0;
@@ -31,7 +31,7 @@ In the postfix form, the operator appears after the operand. While using the pos
 
 #### Example using the post-increment
 
-```
+```java
 int add = 1;
 add++; // add = 2
 int number = add++; // add = 3, number = 2
@@ -39,7 +39,7 @@ int number = add++; // add = 3, number = 2
 
 #### Example using the post-decrement:
 
-```
+```java
 int add = 2;
 add--; // add = 1
 int number = add--; // add = 0, number= 1

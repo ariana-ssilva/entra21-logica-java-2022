@@ -13,7 +13,7 @@ Arithmetic operators perform fundamental math operations between two variables a
 
 ### Examples
 
-```
+```java
 class Main {
   public static void main(String[] args) {
     

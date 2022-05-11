@@ -7,9 +7,9 @@ public class Main {
 	public static void main(String[] args) {
 		System.out.println("Condicionais - Switch");
 
-		System.out.println("Serve para escolher entre opções pré definidas");
+		System.out.println("Serve para escolher entre opï¿½ï¿½es prï¿½ definidas");
 
-		System.out.println("Geralmente quando há muitos ifs elses ifs baseados em igualdade");
+		System.out.println("Geralmente quando hï¿½ muitos ifs elses ifs baseados em igualdade");
 		
 		float altura = 1.5f;
 		
@@ -18,21 +18,21 @@ public class Main {
 		} else if (altura == 1.2) {
 			System.out.println("ainda nanico");
 		}else if (altura == 1.5) {
-			System.out.println("quase não nanico");
+			System.out.println("quase nï¿½o nanico");
 		}else {
-			System.out.println("não é mais nanico");
+			System.out.println("nï¿½o ï¿½ mais nanico");
 		}
 		
 		System.out.println("1 = Intervalo");
 		System.out.println("2 = Exercicio");
 		System.out.println("3 = Prova");
 		
-		Scanner entrada = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
 		byte opcao;
 		
 		System.out.println("Digite um numero");
-		opcao = entrada.nextByte();
+		opcao = input.nextByte();
 		
 		switch(opcao) {
 		case 1:
@@ -40,7 +40,7 @@ public class Main {
 			break;
 			
 		case 2:
-			System.out.println("Vamos para os exercícios");
+			System.out.println("Vamos para os exercï¿½cios");
 			break;	
 			
 		case 3:
@@ -50,26 +50,26 @@ public class Main {
 		
 		String resposta;
 		System.out.println("Queremos intervalo?");
-		resposta = entrada.next();
+		resposta = input.next();
 		
 		switch(resposta) {
 		case "sim":
 			System.out.println("Hj foi na hora H");
 			break;
 			
-		case "não":
+		case "nï¿½o":
 			System.out.println("Esperar mais um pouco");
 			break;
 			
 		default:
-			System.out.println("era uma pergunta tão simples...");
+			System.out.println("era uma pergunta tï¿½o simples...");
 			break;
 		}
 		
 		System.out.println("Escolha um numero");
 		System.out.println("1 = vermelho ");
 		System.out.println("2 = azul");
-		resposta= entrada.next();
+		resposta= input.next();
 		
 		
 		switch (resposta) {
@@ -86,7 +86,7 @@ public class Main {
 			break;
 			
 		default:
-			System.out.println("opção invalida");
+			System.out.println("opï¿½ï¿½o invalida");
 			break;
 		}
 	}

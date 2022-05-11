@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Operadores Aritméticos");
+		System.out.println("Operadores Aritmï¿½ticos");
 		
 		System.out.println("Realizando uma soma "+ (1 + 7 ));
 		System.out.println(4 + 10 );
@@ -14,27 +14,27 @@ public class Main {
 		float numeroA, numeroB;
 		float calculoSoma;
 		float resto;
-		 // objeto entrada da classe Scanner precisa utilizar o System.in para ter acesso ao teclado
-		Scanner entrada = new Scanner(System.in); 
-		// constroi um novo objeto para a classe Scanner e atribui para a variável entrada
+		 // objeto input da classe Scanner precisa utilizar o System.in para ter acesso ao teclado
+		Scanner input = new Scanner(System.in); 
+		// constroi um novo objeto para a classe Scanner e atribui para a variï¿½veinputda
 		
 		System.out.println("Digite o numero A: ");
-		numeroA = entrada.nextFloat();
+		numeroA = input.nextFloat();
 		
 		System.out.println("Digite o numero B: ");
-		numeroB = entrada.nextFloat();
+		numeroB = input.nextFloat();
 		
 		calculoSoma = numeroA + numeroB;
-		System.out.println("A soma é : " + (numeroA + numeroB));
-		System.out.println("Outra forma de exibir é : " + calculoSoma);
-		System.out.println("A subtração é : " + (numeroA - numeroB));
-		System.out.println("A divisão é : " + (numeroA / numeroB));
-		System.out.println("A multiplicação é : " + (numeroA * numeroB));
+		System.out.println("A soma ï¿½ : " + (numeroA + numeroB));
+		System.out.println("Outra forma de exibir ï¿½ : " + calculoSoma);
+		System.out.println("A subtraï¿½ï¿½o ï¿½ : " + (numeroA - numeroB));
+		System.out.println("A divisï¿½o ï¿½ : " + (numeroA / numeroB));
+		System.out.println("A multiplicaï¿½ï¿½o ï¿½ : " + (numeroA * numeroB));
 		resto = numeroA % numeroB;
-		System.out.println("O resto é: "+resto);
+		System.out.println("O resto ï¿½: "+resto);
 		
 		boolean ehDivisivel = numeroA%numeroB == 0;
-		System.out.println("É divísivel entre si? "+ ehDivisivel);
+		System.out.println("ï¿½ divï¿½sivel entre si? "+ ehDivisivel);
 		
 	}
 

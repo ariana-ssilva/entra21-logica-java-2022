@@ -9,14 +9,14 @@ public class Main {
 	* The formula to convert is: to multiply the temperature celsius by 1.8 and add 32 to the result */
 	    double celsiusDregees, degressToFahrenheit;
 
-	    Scanner entrada = new Scanner (System.in);
+	    Scanner input = new Scanner (System.in);
 
 	    System.out.println("Enter the temperature in Celsius:");
-	    celsiusDregees = entrada.nextFloat();
+	    celsiusDregees = input.nextFloat();
 
 	    degressToFahrenheit = (celsiusDregees * 1.8) + 32;
 
-	    System.out.println("The temperature converted to Fahrenheit is  " + degressToFahrenheit + "°");
+	    System.out.println("The temperature converted to Fahrenheit is  " + degressToFahrenheit + "ï¿½");
 
 	}
 

@@ -3,24 +3,24 @@ package br.com.entra21.operador.ternario;
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("Operador Ternário");
+		System.out.println("Operador Ternï¿½rio");
 
-		String nome;
+		String userName;
 		boolean condicao = true;
 
-		nome = (true) ? "Nome" : "Sobrenome";
+		userName = (true) ? "userName" : "SobreuserName";
 
-		System.out.println("Então vc é " + (condicao ? "de maior" : "de menor"));
+		System.out.println("Entï¿½o vc ï¿½ " + (condicao ? "de maior" : "de menor"));
 
 		byte idade = 30;
 
 		if (idade > 17) {
-			System.out.println("Vc é de maior");
+			System.out.println("Vc ï¿½ de maior");
 		} else {
-			System.out.println("VC é de menor");
+			System.out.println("VC ï¿½ de menor");
 		}
 
-		System.out.println("Vc é " + (idade > 17 ? "de maior" : "de menor"));
+		System.out.println("Vc ï¿½ " + (idade > 17 ? "de maior" : "de menor"));
 
 		condicao = (idade == 30 ? true : false);
 	}

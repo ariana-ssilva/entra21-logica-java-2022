@@ -24,7 +24,7 @@
 - [x] Functions;
 - [x] First test;
 - [x] Repetition structures (for);
-- [ ] Repetition structures (while);
+- [x] Repetition structures (while);
 - [ ] Array Manipulation;
 - [ ] Repetition structures (arrays);
 - [ ] Multidimensional Array manipulation;

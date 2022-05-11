@@ -9,7 +9,7 @@ Display the result and in which weight range it is;
 
 </center>
 
-[Run Code](https://replit.com/@ariana-ssilva/Main-12#Main.java)
+[![Run Code](https://img.shields.io/badge/-Run%20%20code%20-green?style=flat&logo=replit&logoColor=white)](https://replit.com/@ariana-ssilva/Main-12#Main.java)&nbsp;
 
 
 

@@ -1,41 +1,35 @@
-# Prova 01 - 05.05.2022
+# Test 01 - 05.05.2022
 
-### Detalhes questão 01
+### Question 01
 
-1. Variáveis
-1. Constantes
-1. Comentários
+1. Variables
+1. Constants
+1. Comments
 1. If
   1. else
   1. else if
 1. switch
 1. Funções
 
-## 01 - Descubra seu signo
-> Crie um programa que informe o signo do usuário.
-Capturar nome,dia e mês de aniversário.
-Criar constante para numero limite do dia do mês, no caso 31.
-Se o dia for maior que o limite, informar o valor limite para um dia do mês.Senão, escolher o mês correspondente para fazer as validações especificas : nesse mês existe esse dia?
-Com base no dia do mês qual é o signo?
-Mês invalido!
+## 01 - Discover your zodiac sign
+> Create a program that informs the sign of the user. Capture name, day and month of birthday. Create a constant for the limit number of the day of the month, in this case 31. If the day is greater than the limit, inform the limit value for a day of the month. Otherwise, choose the corresponding month to carry out the specific validations: this day exists in this month ? Based on the day of the month what is the sign? Invalid month!
 
-| Dia/Mês       | Signo      |
-| :-----------: |:----------:|
-| 21/03 a 20/04 | Áries      |
-| 21/04 a 20/05 | Touro      |
-| 21/05 a 20/06 | Gêmeos     |
-| 21/06 a 21/07 | Câncer     |
-| 22/07 a 22/08 | Leão       |
-| 23/08 a 22/09 | Virgem     |
-| 23/09 a 22/10 | Libra      |
-| 23/10 a 21/11 | Escorpião  |
-| 22/11 a 21/12 | Sagitário  |
-| 22/12 a 20/01 | Capricórnio|
-| 21/01 a 19/02 | Aquário    |
-| 20/02 a 20/03 | Peixes     |
+| Day/Month     | Zodiac Sign| Symbol  |
+| :-----------: |:----------:|:-------:|
+| 03/21 to 04/20| Aries      |♈      |
+| 04/21 to 05/20| Taurus     |♉      |     
+| 05/21 to 06/20| Gemini     |♊      |
+| 06/21 to 07/21| Cancer     |♋      |
+| 07/22 to 08/22| Leo        |♌      | 
+| 08/23 to 09/22| Virgo      |♍      |
+| 09/23 to 10/22| Libra      |♎      |
+| 10/23 to 11/21| Scorpio    |♏      |
+| 11/22 to 12/21| Sagittarius|♐      |
+| 12/22 to 01/20| Capricorn  |♑      |
+| 01/21 to 02/19| Aquarius   |♒      |
+| 02/20 to 03/20| Pisces     |♓      |
 
-![Gif Descubra seu signo!](/gif_img/prova01.gif)
+![Gif Discover your zodiac sign](/gif_img/prova01.gif)
 
 
-[Run Code](https://replit.com/@ariana-ssilva/ForsakenTemptingCookies#Main.java)
-
+[![Run in replit](https://img.shields.io/badge/-Run%20%20code%20-green?style=flat&logo=replit&logoColor=white)](https://replit.com/@ariana-ssilva/ForsakenTemptingCookies#Main.java)&nbsp;

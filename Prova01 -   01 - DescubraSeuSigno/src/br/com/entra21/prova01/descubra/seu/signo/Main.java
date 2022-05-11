@@ -4,274 +4,221 @@ import java.util.Scanner;
 
 public class Main {
 
-	public static void main(String[] args) {
-		Scanner enter = new Scanner(System.in);
-		System.out.println("Vamos descobrir seu signo!");
+    public static void main(String[] args) {
+        Scanner enter = new Scanner(System.in);
+        System.out.println("Let's discover your zodiac sign!");
 
-		descubraSeuSigno(receberNome());
-		validarMesEDia();
+        disoveringYourZodiacSign(getUserName());
+        validatingDayAndMonth();
 
-	}
+    }
 
-	public static void descubraSeuSigno(String nome) {
-		System.out.println("----------------------------------------------------");
-	}
+    public static void disoveringYourZodiacSign(String userName) {
+        System.out.println("----------------------------------------------------");
+    }
 
-	public static String receberNome() {
-		String nome;
-		Scanner entrada = new Scanner(System.in);
-		System.out.println("Digite seu nome:");
-		nome = entrada.nextLine();
-		return nome;
-	}
+    public static String getUserName() {
+        String userName;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Tell me your name::");
+        userName = input.nextLine();
+        return userName;
+    }
 
-	public static void validarMesEDia() {
-		byte diaNascimento, mesNascimento;
-		final byte DIA_LIMITE_MES = 31;
-		Scanner entrada = new Scanner(System.in);
+    public static void validatingDayAndMonth() {
+        byte birthday, birthMonth;
+        final byte MAX_DAY_MONTH = 31;
+        Scanner input = new Scanner(System.in);
 
-		System.out.println(" Olá,digite o dia do seu nascimento:");
-		diaNascimento = entrada.nextByte();
+        System.out.println("Tell me the day you were born:");
+        birthday = input.nextByte();
 
-		// validação de dia limite nos meses
-		if (diaNascimento >= 1 && diaNascimento <= DIA_LIMITE_MES) {
-			System.out.println("Você nasceu no dia " + diaNascimento);
-		} else {
-			System.out.println("O limite de dias de um mês é 31!");
-			System.exit(0);
-		}
-		System.out.println("----------------------------------------------------");
+        // validating max days
+        if (birthday >= 1 && birthday <= MAX_DAY_MONTH) {
+            System.out.println("You were born on  " + birthday);
+        } else {
+            System.out.println("This month has only 31 days!");
+            System.exit(0);
+        }
+        System.out.println("----------------------------------------------------");
 
-		System.out.println("Informe o nº correspondente ao mês do seu nascimento:");
-		System.out.println("----------------------------------------------------");
-		System.out.println("  1 | Janeiro     2 | Fevereiro    3 | Março");
-		System.out.println("  4 | Abril       5 | Maio         6 | Junho");
-		System.out.println("  7 | Julho       8 | Agosto       9 | Setembro");
-		System.out.println(" 10 | Outubro    11 | Novembro    12 | Dezembro");
-		System.out.println("----------------------------------------------------");
+        System.out.println("Tell me the month you were born:");
+        System.out.println("----------------------------------------------------");
+        System.out.println("  1 | January     2 | February     3 | March");
+        System.out.println("  4 | April       5 | May          6 | June");
+        System.out.println("  7 | July        8 | August       9 | September");
+        System.out.println(" 10 | October    11 | November    12 | December");
+        System.out.println("----------------------------------------------------");
 
-		// validando meses
-		mesNascimento = entrada.nextByte();
-		if (mesNascimento == 2 && diaNascimento > 29) {
-			System.out.println("O limite de dias para este mês é 29! Execute o programa novamente.");
-			System.exit(0);
-		} else if (mesNascimento == 4 || mesNascimento == 6 || mesNascimento == 9
-				|| mesNascimento == 11 && diaNascimento > 30) {
-			System.out.println("O limite de dias para este mês é 30! Execute o programa novamente.");
-			System.exit(0);
+        // validando meses
+        birthMonth = input.nextByte();
+        if (birthMonth == 2 && birthday > 29) {
+            System.out.println("This month has only 29 days!");
+            System.exit(0);
+        } else if (birthMonth == 4 || birthMonth == 6 || birthMonth == 9
+                || birthMonth == 11 && birthday > 30) {
+            System.out.println("This month has only 30 days!");
+            System.exit(0);
 
-		} else if (mesNascimento >= 1 && mesNascimento <= 12) {
-			System.out.println("Você nasceu no mês " + mesNascimento);
-			System.out.println("----------------------------------------------------");
-		} else {
-			System.out.println("Este mês é inválido!");
-			System.exit(0);
-		}
+        } else if (birthMonth >= 1 && birthMonth <= 12) {
+            System.out.println("You were  born on" + birthMonth);
+            System.out.println("----------------------------------------------------");
+        } else {
+            System.out.println("Invalid month!");
+            System.exit(0);
+        }
 
-		// iniciando a validação de mês/dia/signo
-		switch (mesNascimento) {
-		case 1:
-			if (diaNascimento <= 20) {
-				System.out.println("Seu signo é CAPRICÓRNIO");
-				System.out.println("Previsão para hoje 05/05/22:");
-				System.out.println("Há coisas complicadas, como sempre, porém, há um enorme número de "
-						+ "situações simples que, se bem atendidas e valorizadas, são capazes de lhe "
-						+ "brindar com suporte para obter o regozijo que é buscado alhures.");
-				break;
-			} else
-				System.out.println("Seu signo é AQUÁRIO");
-			System.out.println("Previsão para hoje 05/05/22:");
-			System.out.println("A segurança é importante, mas se a preservação dessa se converter numa"
-					+ " prisão que amarra o espírito de aventura, então você precisa usar seu "
-					+ "discernimento com clareza e firme intenção, para separar as coisa");
-			break;
+        // validating birthday, month and zodiac sign
+        switch (birthMonth) {
+            case 1:
+                if (birthday <= 20) {
+                    System.out.println("Your zodiac sign is CAPRICORN");
+                    System.out.println(
+                            "Rather than waiting for things to happen to you, take action. Arrange for to meet up with a family member");
+                    break;
+                } else
+                    System.out.println("Your zodiac sign is AQUARIUS");
+                System.out.println(
+                        "Sit down and have a think about what your goals are in the remainder of the year. There are better days ahead.");
+                break;
 
-		case 2:
-			if (diaNascimento <= 19) {
-				System.out.println("Seu signo é AQUÁRIO");
-				System.out.println("Previsão para hoje 05/05/22:");
-				System.out.println("A segurança é importante, mas se a preservação dessa se converter numa"
-						+ " prisão que amarra o espírito de aventura, então você precisa usar seu "
-						+ "discernimento com clareza e firme intenção, para separar as coisa");
-				break;
-			} else
-				System.out.println("Seu signo é PEIXES");
-			System.out.println("Previsão para hoje 05/05/22:");
-			System.out.println("A desordem que incomoda não é um castigo, mas um chamado a parar tudo e se "
-					+ "dedicar a organizar os pequenos detalhes da vida cotidiana, esses mesmos que, em geral,"
-					+ " não mereceriam muita atenção. Agora são importantes.");
-			break;
+            case 2:
+                if (birthday <= 19) {
+                    System.out.println("Your zodiac sign is AQUARIUS");
+                    System.out.println(
+                            "Sit down and have a think about what your goals are in the remainder of the year. There are better days ahead.");
+                    break;
+                } else
+                    System.out.println("Your zodiac sign is PISCES");
+                System.out.println(
+                        "Some conversations are likely to occur about your living situation. Consider how you can best use your money.");
+                break;
 
-		case 3:
-			if (diaNascimento <= 20) {
-				System.out.println("Seu signo é PEIXES");
-				System.out.println("Previsão para hoje 05/05/22:");
-				System.out.println("A desordem que incomoda não é um castigo, mas um chamado a parar tudo e se "
-						+ "dedicar a organizar os pequenos detalhes da vida cotidiana, esses mesmos que, em geral,"
-						+ " não mereceriam muita atenção. Agora são importantes.");
-				break;
-			} else
-				System.out.println("Seu signo é ÁRIES");
-			System.out.println("Previsão para hoje 05/05/22:");
-			System.out.println("O que tiver em mente fazer, faça em silêncio, sob o manto da discrição, "
-					+ "atraindo a menor atenção possível sobre seus movimentos. Só assim suas ações serão "
-					+ "eficientes, além de imperturbáveis. Algo muito importante.");
-			break;
+            case 3:
+                if (birthday <= 20) {
+                    System.out.println("Your zodiac sign is PISCES");
+                    System.out.println(
+                            "Some conversations are likely to occur about your living situation. Consider how you can best use your money.");
+                    break;
+                } else
+                    System.out.println("Your zodiac sign is ARIES");
+                System.out.println(
+                        "Catch up on any things that are on your to-do list. Think about making some changes to your routine.");
+                break;
 
-		case 4:
-			if (diaNascimento <= 20) {
-				System.out.println("Seu signo é ÁRIES");
-				System.out.println("Previsão para hoje 05/05/22:");
-				System.out.println("O que tiver em mente fazer, faça em silêncio, sob o manto da discrição, "
-						+ "atraindo a menor atenção possível sobre seus movimentos. Só assim suas ações serão "
-						+ "eficientes, além de imperturbáveis. Algo muito importante.");
-				break;
-			} else
-				System.out.println("Seu signo é TOURO");
-			System.out.println("Previsão para hoje 05/05/22:");
-			System.out.println("Esperar que algo aconteça não é uma atitude repreensível, porque há momentos da"
-					+ " vida em que não se pode fazer nada além de esperar. Porém, enquanto espera, sua alma pode"
-					+ " usar o tempo para se dedicar a colocar ordem.");
-			break;
+            case 4:
+                if (birthday <= 20) {
+                    System.out.println("Your zodiac sign is ARIES");
+                    System.out.println(
+                            "Catch up on any things that are on your to-do list. Think about making some changes to your routine.");
+                    break;
+                } else
+                    System.out.println("Your zodiac sign is TAURUS");
+                System.out.println(
+                        "Get your finances in order by putting some money aside. Give yourself a chance to relax.");
+                break;
 
-		case 5:
-			if (diaNascimento <= 20) {
-				System.out.println("Seu signo é TOURO");
-				System.out.println("Previsão para hoje 05/05/22:");
-				System.out.println("Esperar que algo aconteça não é uma atitude repreensível, porque há momentos da"
-						+ " vida em que não se pode fazer nada além de esperar. Porém, enquanto espera, sua alma pode"
-						+ " usar o tempo para se dedicar a colocar ordem.");
-				break;
-			} else
-				System.out.println("Seu signo é GÊMEOS");
-			System.out.println("Previsão para hoje 05/05/22:");
-			System.out.println("Faça o que puder, evite cobrar de sua alma mais do que ela seja capaz de fazer neste "
-					+ "momento. É contraproducente se comportar com severidade, porque isso só faria você deixar de "
-					+ "gostar do que está ao alcance fazer.");
-			break;
+            case 5:
+                if (birthday <= 20) {
+                    System.out.println("Your zodiac sign is TAURUS");
+                    System.out.println(
+                            "Get your finances in order by putting some money aside. Give yourself a chance to relax.");
+                    break;
+                } else
+                    System.out.println("Your zodiac sign is GEMINI");
+                System.out.println(
+                        "Have some deep conversations with a close friend. Create some plans for yourself and a loved one.");
+                break;
 
-		case 6:
-			if (diaNascimento <= 20) {
-				System.out.println("Seu signo é GEMEOS");
-				System.out.println("Previsão para hoje 05/05/22:");
-				System.out
-						.println("Faça o que puder, evite cobrar de sua alma mais do que ela seja capaz de fazer neste "
-								+ "momento. É contraproducente se comportar com severidade, porque isso só faria você deixar de "
-								+ "gostar do que está ao alcance fazer.");
-				break;
-			} else
-				System.out.println("Seu signo é CÂNCER");
-			System.out.println("Previsão para hoje 05/05/22:");
-			System.out.println(
-					"Muitas belas palavras poderiam ser ditas para suavizar uma situação tensa, e provavelmente "
-							+ "elas serão ditas, porém, no fim do dia, só importará o que você tiver feito, a maneira com que as "
-							+ "palavras se tornam obras.");
-			break;
+            case 6:
+                if (birthday <= 20) {
+                    System.out.println("Your zodiac sign is GEMINI");
+                    System.out.println(
+                            "Have some deep conversations with a close friend. Create some plans for yourself and a loved one.");
+                    break;
+                } else
+                    System.out.println("Your zodiac sign is CANCER");
+                System.out.println(
+                        "Treat yourself if the opportunity presents itself. Don't be afraid of asking for something you desire.");
+                break;
 
-		case 7:
-			if (diaNascimento <= 21) {
-				System.out.println("Seu signo é CANCER");
-				System.out.println("Previsão para hoje 05/05/22:");
-				System.out.println(
-						"Muitas belas palavras poderiam ser ditas para suavizar uma situação tensa, e provavelmente "
-								+ "elas serão ditas, porém, no fim do dia, só importará o que você tiver feito, a maneira com que as "
-								+ "palavras se tornam obras.");
-				break;
-			} else
-				System.out.println("Seu signo é LEÃO");
-			System.out.println("Previsão para hoje 05/05/22:");
-			System.out.println(
-					"Assuma alguns riscos moderados, algo que, se der tudo errado, não faça tanta diferença assim."
-							+ "Por meio dos riscos assumidos, você encontrará alguma chance interessante de avançar, mesmo que sem "
-							+ "garantia de nada.");
-			break;
+            case 7:
+                if (birthday <= 21) {
+                    System.out.println("Your zodiac sign is CANCER");
+                    System.out.println(
+                            "Treat yourself if the opportunity presents itself. Don't be afraid of asking for something you desire.");
+                    break;
+                } else
+                    System.out.println("Your zodiac sign is LEO");
+                System.out.println(
+                        "Get in touch with an old friend and reconnect. Put in the hard work today to make tomorrow easier.");
+                break;
 
-		case 8:
-			if (diaNascimento <= 22) {
-				System.out.println("Seu signo é LEÃO");
-				System.out.println("Previsão para hoje 05/05/22:");
-				System.out.println(
-						"Assuma alguns riscos moderados, algo que, se der tudo errado, não faça tanta diferença assim."
-								+ "Por meio dos riscos assumidos, você encontrará alguma chance interessante de avançar, mesmo que sem "
-								+ "garantia de nada.");
-				break;
-			} else
-				System.out.println("Seu signo é VIRGEM");
-			System.out.println("Previsão para hoje 05/05/22:");
-			System.out.println(
-					"O exemplo das pessoas é muito valioso, porque é nesse que sua alma se espelha e se sente estimulada"
-							+ " a seguir. Não importa que o exemplo seja grande ou pequeno, o que importa é sua alma se sentir atraída por ele.");
-			break;
+            case 8:
+                if (birthday <= 22) {
+                    System.out.println("Your zodiac sign is LEO");
+                    System.out.println(
+                            "Get in touch with an old friend and reconnect. Put in the hard work today to make tomorrow easier.");
+                    break;
+                } else
+                    System.out.println("Your zodiac sign is VIRGO");
+                System.out.println(
+                        "Let your feelings come to the fore today. Start to pay off some of the money you owe.");
+                break;
 
-		case 9:
-			if (diaNascimento <= 22) {
-				System.out.println("Seu signo é VIRGEM");
-				System.out.println("Previsão para hoje 05/05/22:");
-				System.out.println(
-						"O exemplo das pessoas é muito valioso, porque é nesse que sua alma se espelha e se sente estimulada"
-								+ " a seguir. Não importa que o exemplo seja grande ou pequeno, o que importa é sua alma se sentir atraída por ele.");
-				break;
-			} else
-				System.out.println("Seu signo é LIBRA");
-			System.out.println("Previsão para hoje 05/05/22:");
-			System.out.println(
-					"Há emoções de todos os tipos e para todos os gostos, mas é bastante difícil as provocar intencionalmente, a não ser que"
-							+ " você tenha se exercitado nisso. Todas as emoções são sinceras, não há mentira envolvida nelas.");
-			break;
+            case 9:
+                if (birthday <= 22) {
+                    System.out.println("Your zodiac sign is VIRGO");
+                    System.out.println(
+                            "Let your feelings come to the fore today. Start to pay off some of the money you owe.");
+                    break;
+                } else
+                    System.out.println("Your zodiac sign is LIBRA");
+                System.out.println(
+                        "Organise a trip away from home with your friends. Keep an eye out for any new connections in your love life.");
+                break;
 
-		case 10:
-			if (diaNascimento <= 22) {
-				System.out.println("Seu signo é LIBRA");
-				System.out.println("Previsão para hoje 05/05/22:");
-				System.out.println(
-						"Há emoções de todos os tipos e para todos os gostos, mas é bastante difícil as provocar intencionalmente, a não ser que"
-								+ " você tenha se exercitado nisso. Todas as emoções são sinceras, não há mentira envolvida nelas.");
-				break;
-			} else
-				System.out.println("Seu signo é ESCORPIÃO");
-			System.out.println("Previsão para hoje 05/05/22:");
-			System.out.println(
-					"Há tanta coisa para viver e experimentar ainda, que seria melhor você não se encerrar em seus pontos de vista, "
-							+ "arrumando conflito sem necessidade. Evite o estresse, viva para agregar alegria com sua presença.");
-			break;
+            case 10:
+                if (birthday <= 22) {
+                    System.out.println("Your zodiac sign is LIBRA");
+                    System.out.println(
+                            "Organise a trip away from home with your friends. Keep an eye out for any new connections in your love life.");
+                    break;
+                } else
+                    System.out.println("Your zodiac sign is SCORPIO");
+                System.out.println(
+                        "New opportunities are on the horizon. Make sure you create time to see those closest to you.");
+                break;
 
-		case 11:
-			if (diaNascimento <= 21) {
-				System.out.println("Seu signo é ESCORPIÃO");
-				System.out.println("Previsão para hoje 05/05/22:");
-				System.out.println(
-						"Há tanta coisa para viver e experimentar ainda, que seria melhor você não se encerrar em seus pontos de vista, "
-								+ "arrumando conflito sem necessidade. Evite o estresse, viva para agregar alegria com sua presença.");
-				break;
-			} else
-				System.out.println("Seu signo é SAGITÁRIO");
-			System.out.println("Previsão para hoje 05/05/22:");
-			System.out.println(
-					"Procure passar por essas situações que se repetem insistentemente sem lhes dar atenção suficiente para se tornarem, "
-							+ "mais uma vez, conflitos. Não é de conflito que você precisa, mas de espaço livre.");
-			break;
+            case 11:
+                if (birthday <= 21) {
+                    System.out.println("Your zodiac sign is SCORPIO");
+                    System.out.println(
+                            "New opportunities are on the horizon. Make sure you create time to see those closest to you.");
+                    break;
+                } else
+                    System.out.println("Your zodiac sign is SAGITTARIUS");
+                System.out.println(
+                        "Address something that you have been putting off for a long time. Let your romantic side take centre stage.");
+                break;
 
-		case 12:
-			if (diaNascimento <= 21) {
-				System.out.println("Seu signo é SAGITÁRIO");
-				System.out.println("Previsão para hoje 05/05/22:");
-				System.out.println(
-						"Procure passar por essas situações que se repetem insistentemente sem lhes dar atenção suficiente para se tornarem, "
-								+ "mais uma vez, conflitos. Não é de conflito que você precisa, mas de espaço livre.");
-				break;
-			} else
-				System.out.println("Seu signo é CAPRICÓRNIO");
-			System.out.println("Previsão para hoje 05/05/22:");
-			System.out.println("Há coisas complicadas, como sempre, porém, há um enorme número de "
-					+ "situações simples que, se bem atendidas e valorizadas, são capazes de lhe "
-					+ "brindar com suporte para obter o regozijo que é buscado alhures.");
-			break;
+            case 12:
+                if (birthday <= 21) {
+                    System.out.println("Your zodiac sign is SAGITTARIUS");
+                    System.out.println(
+                            "Address something that you have been putting off for a long time. Let your romantic side take centre stage.");
+                    break;
+                } else
+                    System.out.println("Your zodiac sign is CAPRICORN");
+                System.out.println(
+                        "Rather than waiting for things to happen to you, take action. Arrange for to meet up with a family member");
+                break;
 
-		default:
-			System.out.println("\n!            MÊS INVÁLIDO               !");
-			System.out.println("----------------------------------------------------");
-			System.exit(0);
-		}
-	}
+            default:
+                System.out.println("\n!            INVALID MONTH               !");
+                System.out.println("----------------------------------------------------");
+                System.exit(0);
+        }
+    }
 
 }

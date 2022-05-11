@@ -7,39 +7,39 @@ public class Main {
 	public static void main(String[] args) {
 		System.out.println("Aprendendo sobre for");
 
-		Scanner entrada = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		String opcao;
 		System.out.println("MENU DO FOR");
-		System.out.println("Escolha uma opção:");
+		System.out.println("Escolha uma opï¿½ï¿½o:");
 		System.out.println(" 1 - for simples");
 		System.out.println(" 2 - nested for");
-		System.out.println(" 3 - Solicite ao usuário uma quantidade inicial e final, para exibir em tela a repetição do inicio até o final");
-		System.out.println(" 4 - Solicite ao usuário um valor numero para exibir a contagem regressiva até o zero");
+		System.out.println(" 3 - Solicite ao usuï¿½rio uma quantidade inicial e final, para exibir em tela a repetiï¿½ï¿½o do inicio atï¿½ o final");
+		System.out.println(" 4 - Solicite ao usuï¿½rio um valor numero para exibir a contagem regressiva atï¿½ o zero");
 		System.out.println(" 5 - Retorne a tabuada do numero escolhido");
-		System.out.println(" 6 - Retornar todas as tabuadas de 1 até a tabuada do numero informado pelo usuário");
+		System.out.println(" 6 - Retornar todas as tabuadas de 1 atï¿½ a tabuada do numero informado pelo usuï¿½rio");
 
-		opcao = entrada.nextLine();
+		opcao = input.nextLine();
 
 		switch (opcao.toLowerCase()) {
 		case "1", "for simples":
-			// função aula for simples
-			aulaForSimples(); // função de procedimento não precisa de argumento e nem retorno
+			// funï¿½ï¿½o aula for simples
+			aulaForSimples(); // funï¿½ï¿½o de procedimento nï¿½o precisa de argumento e nem retorno
 			break;
 
 		case "2", "nested for":
-			// sos ainda não sei
-			aulaNestedFor(); // função de procedimento não precisa de argumento e nem retorno
+			// sos ainda nï¿½o sei
+			aulaNestedFor(); // funï¿½ï¿½o de procedimento nï¿½o precisa de argumento e nem retorno
 			break;
 
 		case "3":
-			exercicioForLimite(); // função de procedimento não precisa de argumento e nem retorno
+			exercicioForLimite(); // funï¿½ï¿½o de procedimento nï¿½o precisa de argumento e nem retorno
 			break;
 		case "4":
 			contagemRegressiva();
 			break;
 
 		case "5":
-			retornarTabuada(entrada.nextInt());
+			retornarTabuada(input.nextInt());
 			break;
 
 		case "6":
@@ -49,18 +49,18 @@ public class Main {
 	}
 
 	public static void aulaForSimples() {
-		System.out.println("Repetição simples de forma linear ede 1 em 1");
+		System.out.println("Repetiï¿½ï¿½o simples de forma linear ede 1 em 1");
 		for (int contador1 = 1; contador1 <= 10; contador1 = contador1 + 1) {
-			System.out.println("Repetindo o contador1 pela " + contador1 + "ª vez");
+			System.out.println("Repetindo o contador1 pela " + contador1 + "ï¿½ vez");
 		}
 
 		System.out.println("===============");
 
-		System.out.println("O incremento ou decremento não precisa ser de 1 em 1");
+		System.out.println("O incremento ou decremento nï¿½o precisa ser de 1 em 1");
 		for (int contador2 = 1; contador2 <= 30; contador2 += 4) {
-			System.out.println("Repetindo, mas pulando de 4 rm 4, o contador está em: " + contador2);
+			System.out.println("Repetindo, mas pulando de 4 rm 4, o contador estï¿½ em: " + contador2);
 			// System.out.println("Repetindo "+contador1);
-			// Não é possível usar a variavel contador1 pois ela só existe no outro escopo
+			// Nï¿½o ï¿½ possï¿½vel usar a variavel contador1 pois ela sï¿½ existe no outro escopo
 			// do for.
 		}
 
@@ -90,10 +90,10 @@ public class Main {
 		byte nivelMaior = 5, nivelDetalhe = 10;
 
 		for (int contador = 1; contador <= nivelMaior; contador++) {
-			System.out.println("Para o nível maior, repetindo pela " + contador + " ª vez");
+			System.out.println("Para o nï¿½vel maior, repetindo pela " + contador + " ï¿½ vez");
 
 			for (int contadorInterno = 1; contadorInterno <= nivelDetalhe; contadorInterno++) {
-				System.out.println("Para o nível detalhe pela " + contadorInterno + "ª vez");
+				System.out.println("Para o nï¿½vel detalhe pela " + contadorInterno + "ï¿½ vez");
 
 			}
 		}
@@ -101,16 +101,16 @@ public class Main {
 	}
 
 	public static void exercicioForLimite() {
-		Scanner entrada = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 
 		byte limite;
 
-		System.out.println("Até qual número vc quer contar?");
-		limite = entrada.nextByte();
+		System.out.println("Atï¿½ qual nï¿½mero vc quer contar?");
+		limite = input.nextByte();
 		System.out.println();
 
 		for (int contador = 1; contador <= limite; contador++) {
-			System.out.println("Sua contagem é : " + contador);
+			System.out.println("Sua contagem ï¿½ : " + contador);
 		}
 
 	}
@@ -118,10 +118,10 @@ public class Main {
 	public static void contagemRegressiva() {
 		byte numero;
 
-		Scanner entrada = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 
 		System.out.println("Escolha um numero para fazer a contagem regressiva:");
-		numero = entrada.nextByte();
+		numero = input.nextByte();
 
 		for (int contador = numero; contador > 0; contador--) {
 			System.out.println("It's the final countdown: " + contador);
@@ -130,9 +130,9 @@ public class Main {
 	}
 
 	public static void retornarTabuada(int numero) {
-		Scanner entrada = new Scanner(System.in);
-		System.out.println("Informe um número e te direi a tabuada:");
-		numero = entrada.nextByte();
+		Scanner input = new Scanner(System.in);
+		System.out.println("Informe um nï¿½mero e te direi a tabuada:");
+		numero = input.nextByte();
 
 		for (int contador = 1; contador <= 10; contador++) {
 			System.out.println(numero + " x " + contador + " = " + numero * contador);

@@ -13,7 +13,7 @@ public class Main {
 		System.out.println("Escolha uma op��o:");
 		System.out.println(" 1 - for simples");
 		System.out.println(" 2 - nested for");
-		System.out.println(" 3 - Solicite ao usu�rio uma quantidade inicial e final, para exibir em tela a repeti��o do inicio at� o final");
+		System.out.println(" 3 - Solicite ao usu�rio uma quantage inicial e final, para exibir em tela a repeti��o do inicio at� o final");
 		System.out.println(" 4 - Solicite ao usu�rio um valor numero para exibir a contagem regressiva at� o zero");
 		System.out.println(" 5 - Retorne a tabuada do numero escolhido");
 		System.out.println(" 6 - Retornar todas as tabuadas de 1 at� a tabuada do numero informado pelo usu�rio");

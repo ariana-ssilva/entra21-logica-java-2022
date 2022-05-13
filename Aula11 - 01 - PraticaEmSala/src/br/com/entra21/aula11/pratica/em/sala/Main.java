@@ -9,68 +9,70 @@ public class Main {
 		byte option;
 
 		do {
-			System.out.println("\nEscolha uma das opções: ");
-			System.out.println(" 0 - Sair ");
-			System.out.println(" 1 - Calculando a soma ");
-			System.out.println(" 2 - Repetir 20 vezes ");
-			System.out.println(" 3 - Entre 20 pessoas, exibir a soma das idades");
-			System.out.println(" 4 - Verificando quem é de maior ");
-			System.out.println(" 5 - Leia o nome e idade de 10 pessoas e exiba o nome da mais nova");
+			System.out.println("\nChoose an option: ");
+			System.out.println(" 0 - Quit ");
+			System.out.println(" 1 - Addition ");
+			System.out.println(" 2 - Repeting 20 times ");
+			System.out.println(" 3 - Sum de ages betweem 20 people");
+			System.out.println(" 4 - Verifying who is older than 18 years old ");
+			System.out.println(" 5 - Get name and age of 10 people and return the youngest's name");
 			System.out.println(" 6 - ");
-			System.out.println(" 9 - Solicite a quantidade de notas e calcule a média");
+			System.out.println(" 7 - ");
+			System.out.println(" 8 - ");
+			System.out.println(" 9 - Get the amount of grades and calculate the average");
 			option = input.nextByte();
 			switch (option) {
 			case 0:
-				System.out.println("Saindo...");
+				System.out.println("Exiting...");
 				break;
 
 			case 1:
-				calculandoSoma();
+				runSum();
 				break;
 
 			case 2:
-				repetir20();
+			runRepeat20();
 				break;
 
 			case 3:
-				somarIdade();
+			runSumAge();
 				break;
 
 			case 4:
-				verificandoDeMaior();
+			runVerifyingThe18();
 				break;
 
 			case 5:
-				exibirMaisNovo();
+			runTheYoungest();
 				break;
 
 			case 9:
-				calculandoMedia();
+			runCalculatingAverage();
 				break;
 			default:
-				System.out.println("Escolha uma opção válida!");
+				System.out.println("Escolha uma opï¿½ï¿½o vï¿½lida!");
 				break;
 			}
 
 		} while (option != 0);
-		System.out.println("Obrigada por usar o programa Lista de Exercicios!");
+		System.out.println("Thanks for running this code!");
 	}
 
-	public static void calculandoSoma() {
-		System.out.println("CALCULANDO A SOMA");
-		byte soma = 0;
+	public static void runSum() {
+		System.out.println("ADDITION");
+		byte sum = 0;
 		for (byte counter = 1; counter <= 15; counter++) {
 			System.out.println(
-					"Soma = soma + counter,  " + soma + " = " + soma + " + " + counter + " ==> " + (soma + counter));
-			soma = (byte) (soma + counter);
+					"Soma = sum + counter,  " + sum + " = " + sum + " + " + counter + " ==> " + (sum + counter));
+			sum = (byte) (sum + counter);
 
 		}
 	}
 
-	public static void repetir20() {
+	public static void runRepeat20() {
 
 		for (byte counter = 1; counter <= 20; counter++) {
-			System.out.print("Eu gosto de algoritmo " + (counter % 5 == 0 ? "\n" : ""));
+			System.out.print("I like algorithms! " + (counter % 5 == 0 ? "\n" : ""));
 
 			/*
 			 * if(counter%5==0) { System.out.print("\n"); }
@@ -78,59 +80,59 @@ public class Main {
 		}
 	}
 
-	public static void somarIdade() {
+	public static void runSumAge() {
 		int sumAge = 0;
-		byte idade;
+		byte age;
 		Scanner input = new Scanner(System.in);
 
 		for (byte counter = 1; counter <= 5; counter++) {
-			System.out.println("No momento a soma está em : " + sumAge);
-			System.out.println("Digite a idade da pessoa " + counter);
-			idade = input.nextByte();
-			sumAge = sumAge + idade;
+			System.out.println("Right here the sum is : " + sumAge);
+			System.out.println("Enter the person's age: " + counter);
+			age = input.nextByte();
+			sumAge = sumAge + age;
 		}
-		System.out.println("A soma total das idades foi: " + sumAge);
+		System.out.println("The final sum is: " + sumAge);
 	}
 
-	public static void verificandoDeMaior() {
-		System.out.println("Exibir apenas os de maior");
+	public static void runVerifyingThe18() {
+		System.out.println("Show only the ones who are older than 18");
 		byte maiores = 0;
-		byte idade, counter;
+		byte age, counter;
 		Scanner input = new Scanner(System.in);
 		for (counter = 1; counter <= 20; counter++) {
-			System.out.println("Informe a idade da pessoa " + counter);
-			idade = input.nextByte();
-			if (idade >= 18) {
+			System.out.println("Enter the person's age: " + counter);
+			age = input.nextByte();
+			if (age >= 18) {
 				maiores++;
-				System.out.println("A última pessoa informada era de maior.");
+				System.out.println("The last person infomed was older than 18.");
 			}
 		}
-		System.out.println("Entre " + (counter - 1) + " pessoas, apenas " + maiores + " são de maior.");
+		System.out.println("Between " + (counter - 1) + " people, only " + maiores + " are older than 18.");
 
 	}
 
-	private static void exibirMaisNovo() {
+	private static void runTheYoungest() {
 		Scanner input = new Scanner(System.in);
-		String name, youngerName = "valor";
+		String name, youngerName = " ";
 		byte age, ageMinimal = 0;
 
 		for (byte count = 1; count <= 5; count++) {
 
-			System.out.println("Digite seu nome: ");
+			System.out.println("Enter your name: ");
 			name = input.next();
-			System.out.println(name + " por favor, Digite sua idade: ");
+			System.out.println(name + " please, enter your age: ");
 			age = input.nextByte();
-			// no primeiro laço sempre a primeira idade vai ser a menor
+			// in the first loop, the first age always will be the youngest
 			if (count == 1) {
 				ageMinimal = age;
 				youngerName = name;
-				System.out.println("Sou o primeiro e por isso sou o mais novo " + name + " " + age);
+				System.out.println("I'm the first, so I'm the youngest:  " + name + " " + age);
 			} else {
-				// a partir do segundo laço já tenho como comparar com "ageMinimal"
-				System.out.println("Estou no laço " + count + " e preciso verificar");
+				// it's necessary to compare with ageMininal
+				System.out.println("I'm on loop"  + count + " I need to verify");
 				if (age < ageMinimal) {
 					System.out.println(
-							"Ainda bem que testei porque a pessoa mais nova é " + name + " com " + age + " anos");
+							"Now the youngest person is " + name + " with  " + age + " y.o");
 					ageMinimal = age;
 					youngerName = name;
 				}
@@ -138,34 +140,34 @@ public class Main {
 			}
 
 		}
-		System.out.println("Após isso tudo o mais novo é: " + youngerName + " " + ageMinimal);
+		System.out.println("For sure, the youngest person is: " + youngerName + " " + ageMinimal);
 
 	}
 
-	public static void calculandoMedia() {
+	public static void runCalculatingAverage() {
 		Scanner input = new Scanner(System.in);
-		byte qtdNotas;
-		float nota, soma = 0f;
-		String resposta;
+		byte gradesQty;
+		float grade, sum = 0f;
+		String answer;
 		
-		System.out.println("Digite a quantidade de notas:  ");
-		qtdNotas = input.nextByte();
+		System.out.println("Enter the amount of grades:  ");
+		gradesQty = input.nextByte();
 		
-		byte contador = 0;
+		byte counter = 0;
 		do {
-			contador++;
-			System.out.println("Informe uma nota");
-			nota = input.nextFloat() ;
-			if(contador >= qtdNotas) {
-				System.out.println("Gostaria de capturar mais alguma nota?");
-				resposta = input.next();
-				if(resposta.equals("sim")) {
-					contador--;
+			counter++;
+			System.out.println("Enter the grade:");
+			grade = input.nextFloat() ;
+			if(counter >= gradesQty) {
+				System.out.println("Do you want to insert another grade? ( yes / no)?");
+				answer = input.next();
+				if(answer.equals("sim")) {
+					counter--;
 				}
 			}
-			soma = soma + nota;
-		} while (contador <= qtdNotas);
-		System.out.println("Nota: " + soma);
+			sum = sum + grade;
+		} while (counter <= gradesQty);
+		System.out.println("Grade: " + sum);
 	}
 	
 

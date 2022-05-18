@@ -31,23 +31,27 @@ public class Main {
 				break;
 
 			case 2:
-			runRepeat20();
+				runRepeat20();
 				break;
 
 			case 3:
-			runSumAge();
+				runSumAge();
 				break;
 
 			case 4:
-			runVerifyingThe18();
+				runVerifyingThe18();
 				break;
 
 			case 5:
-			runTheYoungest();
+				runTheYoungest();
+				break;
+
+			case 8:
+				runSumNegative();
 				break;
 
 			case 9:
-			runCalculatingAverage();
+				runCalculatingAverage();
 				break;
 			default:
 				System.out.println("Escolha uma opï¿½ï¿½o vï¿½lida!");
@@ -129,10 +133,9 @@ public class Main {
 				System.out.println("I'm the first, so I'm the youngest:  " + name + " " + age);
 			} else {
 				// it's necessary to compare with ageMininal
-				System.out.println("I'm on loop"  + count + " I need to verify");
+				System.out.println("I'm on loop" + count + " I need to verify");
 				if (age < ageMinimal) {
-					System.out.println(
-							"Now the youngest person is " + name + " with  " + age + " y.o");
+					System.out.println("Now the youngest person is " + name + " with  " + age + " y.o");
 					ageMinimal = age;
 					youngerName = name;
 				}
@@ -149,19 +152,19 @@ public class Main {
 		byte gradesQty;
 		float grade, sum = 0f;
 		String answer;
-		
+
 		System.out.println("Enter the amount of grades:  ");
 		gradesQty = input.nextByte();
-		
+
 		byte counter = 0;
 		do {
 			counter++;
 			System.out.println("Enter the grade:");
-			grade = input.nextFloat() ;
-			if(counter >= gradesQty) {
+			grade = input.nextFloat();
+			if (counter >= gradesQty) {
 				System.out.println("Do you want to insert another grade? ( yes / no)?");
 				answer = input.next();
-				if(answer.equals("sim")) {
+				if (answer.equals("sim")) {
 					counter--;
 				}
 			}
@@ -169,6 +172,22 @@ public class Main {
 		} while (counter <= gradesQty);
 		System.out.println("Grade: " + sum);
 	}
-	
 
+	public static void runSumNegative() {
+		Scanner inPut = new Scanner(System.in);
+		int number, sum = 0; // se não inicializa um valor na váriavel ela fica com lixo da memória.
+
+		do {
+
+			System.out.println("What number do you want?");
+			number = inPut.nextInt();
+			if (number >= 0) {
+				sum = sum + number;
+			} // somente números positivos serão somados, ou números naturais.
+
+		} while (number >= 0); // enquanto o número for maior que zero repita
+
+		System.out.println("Your sum is: " + sum);
+
+	}
 }

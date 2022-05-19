@@ -16,46 +16,55 @@ public class Main {
 			System.out.println(" 3 - Sum de ages betweem 20 people");
 			System.out.println(" 4 - Verifying who is older than 18 years old ");
 			System.out.println(" 5 - Get name and age of 10 people and return the youngest's name");
-			System.out.println(" 6 - ");
-			System.out.println(" 7 - ");
-			System.out.println(" 8 - ");
+			System.out.println(" 6 - Working on it...");
+			System.out.println(" 7 - Working on it too...");
+			System.out.println(
+					" 8 - Write an algorithm that reads a sequence of numbers from the user and performs the sum of these numbers. Terminate execution when a negative number is entered.");
 			System.out.println(" 9 - Get the amount of grades and calculate the average");
 			option = input.nextByte();
 			switch (option) {
-			case 0:
-				System.out.println("Exiting...");
-				break;
+				case 0:
+					System.out.println("Exiting...");
+					break;
 
-			case 1:
-				runSum();
-				break;
+				case 1:
+					runSum();
+					break;
 
-			case 2:
-				runRepeat20();
-				break;
+				case 2:
+					runRepeat20();
+					break;
 
-			case 3:
-				runSumAge();
-				break;
+				case 3:
+					runSumAge();
+					break;
 
-			case 4:
-				runVerifyingThe18();
-				break;
+				case 4:
+					runVerifyingThe18();
+					break;
 
-			case 5:
-				runTheYoungest();
-				break;
+				case 5:
+					runTheYoungest();
+					break;
 
-			case 8:
-				runSumNegative();
-				break;
+				case 6:
+					System.out.println("Working on it...");
+					break;
 
-			case 9:
-				runCalculatingAverage();
-				break;
-			default:
-				System.out.println("Escolha uma opï¿½ï¿½o vï¿½lida!");
-				break;
+				case 7:
+					System.out.println("Working on it too..");
+					break;
+
+				case 8:
+					runSumNegative();
+					break;
+
+				case 9:
+					runCalculatingAverage();
+					break;
+				default:
+					System.out.println("Escolha uma opï¿½ï¿½o vï¿½lida!");
+					break;
 			}
 
 		} while (option != 0);
@@ -147,35 +156,9 @@ public class Main {
 
 	}
 
-	public static void runCalculatingAverage() {
-		Scanner input = new Scanner(System.in);
-		byte gradesQty;
-		float grade, sum = 0f;
-		String answer;
-
-		System.out.println("Enter the amount of grades:  ");
-		gradesQty = input.nextByte();
-
-		byte counter = 0;
-		do {
-			counter++;
-			System.out.println("Enter the grade:");
-			grade = input.nextFloat();
-			if (counter >= gradesQty) {
-				System.out.println("Do you want to insert another grade? ( yes / no)?");
-				answer = input.next();
-				if (answer.equals("sim")) {
-					counter--;
-				}
-			}
-			sum = sum + grade;
-		} while (counter <= gradesQty);
-		System.out.println("Grade: " + sum);
-	}
-
 	public static void runSumNegative() {
 		Scanner inPut = new Scanner(System.in);
-		int number, sum = 0; // se não inicializa um valor na váriavel ela fica com lixo da memória.
+		int number, sum = 0; // always inicialize a variable , so it won't get memory trash
 
 		do {
 
@@ -183,11 +166,28 @@ public class Main {
 			number = inPut.nextInt();
 			if (number >= 0) {
 				sum = sum + number;
-			} // somente números positivos serão somados, ou números naturais.
+			} // only positive numbers can be sum
 
-		} while (number >= 0); // enquanto o número for maior que zero repita
+		} while (number >= 0); // while number is bigger than zero, repeat
 
 		System.out.println("Your sum is: " + sum);
 
+	}
+
+	public static void runCalculatingAverage() {
+		Scanner input = new Scanner(System.in);
+		byte gradesQty;
+		float grade, sum = 0f;
+
+		System.out.println("Enter the amount of grades:  ");
+		gradesQty = input.nextByte();
+
+		for (byte counter = 1; counter <= gradesQty; counter++) {
+			System.out.println("Enter " + counter + " grade");
+			grade = input.nextFloat();
+			sum = sum + grade;
+		}
+		System.out.println("Sum =" + sum);
+		System.out.println("Average =" + sum / gradesQty);
 	}
 }

@@ -25,9 +25,9 @@
 - [x] First test;
 - [x] Repetition structures (for);
 - [x] Repetition structures (while);
-- [ ] Array Manipulation;
+- [x] Array Manipulation;
 - [ ] Repetition structures (arrays);
-- [ ] Multidimensional Array manipulation;
+- [x] Multidimensional Array manipulation;
 - [ ] Repetition structures (multidimensional array);
 - [ ] Class and Objects;
 - [ ] Inheritance;

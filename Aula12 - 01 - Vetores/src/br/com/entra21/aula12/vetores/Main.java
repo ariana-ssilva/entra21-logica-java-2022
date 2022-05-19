@@ -5,100 +5,92 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		// Aprendendo sobre Vetores
+		System.out.println("Learning about array");
 		Scanner inPut = new Scanner(System.in);
 		byte option;
 
 		do {
 			System.out.println("0- Exit");
-			System.out.println("01- Declarando Vetores");
-			System.out.println("02- Acessando Índices");
-			System.out.println("03- Atribuindo Valores e Índices");
-			System.out.println("04- Médias com Valores");
+			System.out.println("01- Declaring Array");
+			System.out.println("02- Accessing indexes");
+			System.out.println("03- Assigning values and indexes");
+			System.out.println("04- Average using Array");
 			option = inPut.nextByte();
 
 			switch (option) {
 
-			case 0:
-				// meu case vazio só para não cair no default porque o zero atende a condição no
-				// menu
-				break;
+				case 0:
+					// case empty just to don't go to default option
+					break;
 
-			case 1:
-				// chamada de função
-				declararVetores(); // dentro desses paranteses estariam meus argumentos
-				break;
+				case 1:
+					runDeclaringArray();
+					break;
 
-			case 2:
-				// chama o caso 2 02- Acessando Índices
-				acessarIndices();
-				break;
+				case 2:
+					runAcessingIndexes();
+					break;
 
-			case 3:
-				// Atualizar valores
-				atualizarValores();
-				break;
-			case 4:
-				// Atualizar valores
-				calcularMediaComVetores();
-				break;
+				case 3:
+					runUpdatingValues();
+					break;
+				case 4:
+					runCalculatingAverageUsingArray();
+					break;
 			}
 
-		} while (option != 0); // Condição atendida enquanto o user não digitar 0
+		} while (option != 0);
+		System.out.println("Thanks for running the code!");
 
 	}
 
-	public static void declararVetores() { // aqui dentro do parênteses estão os parametros
-		System.out.println("Aprendendo sobre Vetores");
+	public static void runDeclaringArray() {
 
-		byte idades[]; // Primeiro, criar a variável que é um vetor de algum tipo
+		byte ages[]; // Create the variable, that will be an array of any type
 
-		idades = new byte[15]; // Segundo, definir o tamanho
+		ages = new byte[15]; // Define the length
 
-		System.out.println("O tamanho é " + idades.length); // Depois, usar ou atualizar
+		System.out.println("The length is " + ages.length); // Then, use or uptade
 
-		// como acessar cada posição e ver oq tem nela
-		float notas[] = { 1, 3.5f, 8 }; // Criei a variável e 2 defini o tamanho e os valores
-
-	}
-
-	public static void acessarIndices() {
-		System.out.println("Aprendendo sobre Vetores");
-
-		byte idades[]; // Primeiro, criar a variável que é um vetor de algum tipo
-
-		idades = new byte[15]; // Segundo, definir o tamanho
-
-		System.out.println("O tamanho é " + idades.length); // Depois, usar ou atualizar
-		System.out.println("O que tem no indice [1] " + idades[1]);
-		System.out.println("O que tem no ultimo indice " + idades[2]);
+		// how to acess any index and the content
+		float grades[] = { 1, 3.5f, 8 }; // Creating the second variable and definin the length and the values
 
 	}
 
-	public static void atualizarValores() {
-		float notas[] = { 1, 3.5f, 8 }; // Criei a variável e 2 defini o tamanho e os valores
-		notas[0] = 33; // manda uma nota para o índice "0"
-		notas[2] = 12; // manda uma nota para o índice "2"
+	public static void runAcessingIndexes() {
+
+		byte ages[]; // Create the variable, that will be an array of any type
+		ages = new byte[15]; // Define the length
+
+		System.out.println("The length is: " + ages.length); // Then, use or uptade
+		System.out.println("The index [1] content is  " + ages[1]);
+		System.out.println("The last index's content is " + ages[2]);
 
 	}
 
-	public static void calcularMediaComVetores() {
-		Scanner entrada = new Scanner(System.in);
-		float notas[] = new float[2];
+	public static void runUpdatingValues() {
+		float grades[] = { 1, 3.5f, 8 }; // Creating the variable and definin the length and the values
+		grades[0] = 33; // Assign a grade to the index '0'
+		grades[2] = 12; // Assign a grade to the index '2'
 
-		for (byte contador = 0; contador < notas.length; contador++) {
-			// System.out.println("Contagem em "+contador);
-			System.out.println("Informe a " + (contador + 1) + "ª nota:");
-			notas[contador] = entrada.nextFloat();
+	}
+
+	public static void runCalculatingAverageUsingArray() {
+		Scanner input = new Scanner(System.in);
+		float grades[] = new float[2];
+
+		for (byte counter = 0; counter < grades.length; counter++) {
+			System.out.println("Enter the " + (counter + 1) + " grade:");
+			grades[counter] = input.nextFloat();
 
 		}
-		System.out.println("A segunda nota foi " + notas[1]);
-		float soma = 0;
-		for (byte contador = 0; contador < notas.length; contador++) {
-			System.out.println(notas[contador]);
-			soma = soma + notas[contador];
+		System.out.println("The second grade is " + grades[1]);
+		float sum = 0;
+		for (byte counter = 0; counter < grades.length; counter++) {
+			System.out.println(grades[counter]);
+			sum = sum + grades[counter];
 		}
-		System.out.println("Soma = " + soma);
-		System.out.println("Média = " + soma / notas.length);
+		System.out.println("Sum = " + sum);
+		System.out.println("Average = " + sum / grades.length);
 	}
 }

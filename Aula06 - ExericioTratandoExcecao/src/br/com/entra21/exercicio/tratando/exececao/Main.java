@@ -28,7 +28,7 @@ public class Main {
 			System.out.println("YELLOW is considered a lucky color in China.");
 			break;
 		case "red":
-			System.out.println("RED translates to “beautiful” in Russian.");
+			System.out.println("RED translates to beautiful in Russian.");
 			break;
 		default:
 			System.out.println("Please, choose a number...");

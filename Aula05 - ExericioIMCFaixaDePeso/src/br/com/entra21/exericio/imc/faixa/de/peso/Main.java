@@ -28,11 +28,11 @@ public class Main {
 		} else if (bmi >= 25.0f || bmi <= 30.0) {
 			System.out.println("BMI is: " + bmi + " you're overwight'!");
 		} else if (bmi >= 35.0f || bmi <= 39.5) {
-			System.out.println("BMI is: " + bmi + " you're severe obese'!");
+			System.out.println("BMI is: " + bmi + " you're Obese Class I'!");
 		} else if (bmi >= 40.0f || bmi <= 44.5) {
-			System.out.println("BMI is: " + bmi + " you're morbid obese'!");
+			System.out.println("BMI is: " + bmi + " you're Obese Class II'!");
 		}else {
-			System.out.println("BMI is: " + bmi + " you're super obese'!");
+			System.out.println("BMI is: " + bmi + " you're Obese Class III'!");
 		}
 
 	}

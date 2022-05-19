@@ -3,7 +3,7 @@ Insert 3 grades to calculate the student's average and report if he/she passed o
 
 <center>
 
-![Gif Can you vote? ](/gif_img/5.3.gif)
+![Gif Student's Average ](/gif_img/5.3.gif)
 
 </center>
 

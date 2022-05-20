@@ -26,11 +26,6 @@
 - [x] Repetition structures (for);
 - [x] Repetition structures (while);
 - [x] Array Manipulation;
-- [ ] Repetition structures (arrays);
+- [x] Repetition structures (arrays);
 - [x] Multidimensional Array manipulation;
-- [ ] Repetition structures (multidimensional array);
-- [ ] Class and Objects;
-- [ ] Inheritance;
-- [ ] Polymorphism;
-- [ ] OOP Concepts;
-- [ ] Collections.
+- [x] Repetition structures (multidimensional array);

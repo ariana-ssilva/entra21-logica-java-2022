@@ -4,6 +4,14 @@
 
 <br>
 
+<center>
+
+![Flow Diagram of Switch-Case Statement ](/gif_img/switch-statement-flowchart-in-java.jpg)
+
+</center>
+
+<br>
+
 ```java
 switch (expression){
   case value1:
@@ -30,3 +38,7 @@ switch (expression){
 - The break statement is used inside the switch to terminate a statement sequence.
 - The break statement is optional. If omitted, execution will continue on into the next case.
   
+
+##  Nested Switch Case statements
+
+We can use a switch as part of the statement sequence of an outer switch. This is called a nested switch. Since a switch statement defines its own block, no conflicts arise between the case constants in the inner switch and those in the outer switch. 

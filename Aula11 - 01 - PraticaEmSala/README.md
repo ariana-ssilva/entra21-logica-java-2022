@@ -20,3 +20,10 @@
 >8 .Write an algorithm that reads a sequence of numbers from the user and performs the sum of these numbers. Terminate execution when a negative number is entered.
 
 >9. Write an algorithm that requests the number of grades and calculates the student's average.
+
+<br>
+
+
+<!-- gif -->
+
+[![Run Code](https://img.shields.io/badge/-Run%20%20code%20-green?style=flat&logo=replit&logoColor=white)](https://replit.com/@ariana-ssilva/FreeVerifiableSource#Main.java)&nbsp;

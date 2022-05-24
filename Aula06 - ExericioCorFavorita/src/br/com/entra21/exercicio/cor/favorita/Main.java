@@ -8,7 +8,7 @@ public class Main {
 		String option;
 		Scanner enter = new Scanner(System.in);
 		
-		System.out.println("Choose your favourite color and type it");
+		System.out.println("Choose your favourite color and type it.");
 		System.out.println("I 'll tell you a fun fact about it... ");
 		System.out.println("Green");
 		System.out.println("Blue");
@@ -29,7 +29,7 @@ public class Main {
 			System.out.println("YELLOW is considered a lucky color in China.");
 			break;
 		case "red":
-			System.out.println("RED translates to “beautiful” in Russian.");
+			System.out.println("RED translates to beautiful in Russian.");
 			break;
 		}
 

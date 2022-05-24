@@ -8,161 +8,151 @@ public class Main {
 		byte option;
 
 		do {
-			System.out.println(escreverMenu());
-			// utilizando do-while, pois me peermite entrar no bloco antes de testar a
-			// condição de peermanencia
+			System.out.println(runMenu());
+
 			option = input.nextByte();
 
 			switch (option) {
 			case 0:
-				System.out.println("Obrigado por usar o programa de exercícios!");
+				System.out.println("Thanks for running the program");
 				break;
 			case 1:
-				exibirTamanhoVetores();
+				showArraySize();
 				break;
 			case 2:
-				exibirTamanhoVetoresInicializados();
+				showInitializedArraySize();
 				break;
 			case 3:
-				alimentandoVetores();
+				feedArray();
 				break;
 			case 4:
-				definirTamanhoParaInicializar();
+				defineSizeInitialize();
 				break;
 			case 5:
-				percorrerVetorInicializadoCrescenteDecrescente();
+				AscDescInitializeArray();
 				break;
 			case 6:
-				exibirVetorInteirosNaoInicializado();
+				showIntergerNotInitializeArray();
 			default:
 				break;
 			}
-			// caso a condição de permaneencia seja true, repita o bloco
-		} while (option != 0);// enquanto não for zero, repita
+		} while (option != 0);
 
 	}
 
-	public static String escreverMenu() {
-		String menu = "Escolha uma opção do menu de Práticas\n";
-		menu += "0 - Sair\n";
-		menu += "1 - Criar vetores para cada tipo primitivo e exibir o tamanho deles no console\n";
-		menu += "2 - Criar vetores inicializados para cada tipo primitivo e exibir o tamanho deles no console\n";
-		menu += "3 - Criar um vetor de 5 posições, para que o usuário alimente esses valores\n";
-		menu += "4 - Criar um vetor com o tamanho informado pelo usuário e depois solicitar que o usuário informe os respectivos valores\n";
-		menu += "5 - Criar um vetor de inteiros inicializado , para percorrer: Do inicio ao fim, Do fim ao inicio, Para exibir os valores\n";
-		menu += "6 - Criar um vetor de inteiros não inicializado\n";
+	public static String runMenu() {
+		String menu = "Choose an option\n";
+		menu += "0 - \n";
+		menu += "1 - Create arrays for each primitive type and display their size in the console\n";
+		menu += "2 - Create initialized arrays for each primitive type and display their size in the console\n";
+		menu += "3 - Create a 5-position vector, for the user to feed these values\n";
+		menu += "4 - Create a vector with the size informed by the user and then ask the user to inform the respective values\n";
+		menu += "5 - Create a vector of initialized integers, to traverse: from start to finish, from end to start, to display the values\n";
+		menu += "6 - Create an uninitialized array of integers\n";
 		menu += "---------------------------------------------";
 
 		return menu;
 
 	}
 
-	public static void exibirTamanhoVetores() {
-		byte vetorBytes[] = new byte[1];
-		short vetorShorts[] = new short[2];
-		int vetorInts[] = new int[3];
-		long vetorLongs[] = new long[4];
-		char vetorChars[] = new char[5];
-		float vetorFloats[] = new float[6];
-		double vetorDoubles[] = new double[7];
-		boolean vetorBooleans[] = new boolean[8];
+	public static void showArraySize() {
+		byte bytesArray[] = new byte[1];
+		short shortsArray[] = new short[2];
+		int intsArray[] = new int[3];
+		long longsArray[] = new long[4];
+		char charsArray[] = new char[5];
+		float floatsArray[] = new float[6];
+		double doublesArray[] = new double[7];
+		boolean booleansArray[] = new boolean[8];
 
-		System.out.println("vetorBytes tamanho = " + vetorBytes.length);
-		System.out.println("vetorShorts tamanho = " + vetorShorts.length);
-		System.out.println("vetorInts tamanho = " + vetorInts.length);
-		System.out.println("vetorLongs tamanho = " + vetorLongs.length);
-		System.out.println("vetorChars tamanho = " + vetorChars.length);
-		System.out.println("vetorFloats tamanho = " + vetorFloats.length);
-		System.out.println("vetorDoubles tamanho = " + vetorDoubles.length);
-		System.out.println("vetorBooleans tamanho = " + vetorBooleans.length);
+		System.out.println("bytesArray size = " + bytesArray.length);
+		System.out.println("shortsArray size = " + shortsArray.length);
+		System.out.println("intsArray size = " + intsArray.length);
+		System.out.println("longsArray size = " + longsArray.length);
+		System.out.println("charsArray size = " + charsArray.length);
+		System.out.println("floatsArray size = " + floatsArray.length);
+		System.out.println("doublesArray size = " + doublesArray.length);
+		System.out.println("booleansArray size = " + booleansArray.length);
 	}
 
-	public static void exibirTamanhoVetoresInicializados() {
-		byte vetorBytes[] = { 1, 3, 5, 7, 9 };
-		short vetorShorts[] = { 128, 130, 132, 134 };
-		int vetorInts[] = { 1000, 1002 };
-		long vetorLongs[] = { 110000, 200000 };
-		char vetorChars[] = { 'a', 'r', 'i', 'a', 'n', 'a' };
-		float vetorFloats[] = { 1000.50f, 32698.89f };
-		double vetorDoubles[] = { 15000.54d, 78946.56d };
-		boolean vetorBooleans[] = { false, true, false, false, true, true };
+	public static void showInitializedArraySize() {
+		byte bytesArray[] = { 1, 3, 5, 7, 9 };
+		short shortsArray[] = { 128, 130, 132, 134 };
+		int intsArray[] = { 1000, 1002 };
+		long longsArray[] = { 110000, 200000 };
+		char charsArray[] = { 'a', 'r', 'i', 'a', 'n', 'a' };
+		float floatsArray[] = { 1000.50f, 32698.89f };
+		double doublesArray[] = { 15000.54d, 78946.56d };
+		boolean booleansArray[] = { false, true, false, false, true, true };
 
-		System.out.println("vetorBytes tamanho = " + vetorBytes.length);
-		System.out.println("vetorShorts tamanho = " + vetorShorts.length);
-		System.out.println("vetorInts tamanho = " + vetorInts.length);
-		System.out.println("vetorLongs tamanho = " + vetorLongs.length);
-		System.out.println("vetorChars tamanho = " + vetorChars.length);
-		System.out.println("vetorFloats tamanho = " + vetorFloats.length);
-		System.out.println("vetorDoubles tamanho = " + vetorDoubles.length);
-		System.out.println("vetorBooleans tamanho = " + vetorBooleans.length);
+		System.out.println("bytesArray size = " + bytesArray.length);
+		System.out.println("shortsArray size = " + shortsArray.length);
+		System.out.println("intsArray size = " + intsArray.length);
+		System.out.println("longsArray size = " + longsArray.length);
+		System.out.println("charsArray size = " + charsArray.length);
+		System.out.println("floatsArray size = " + floatsArray.length);
+		System.out.println("doublesArray size = " + doublesArray.length);
+		System.out.println("booleansArray size = " + booleansArray.length);
 	}
 
-	public static void alimentandoVetores() {
-		byte vetorBytes[] = new byte[5];
+	public static void feedArray() {
+		byte bytesArray[] = new byte[5];
 		Scanner input = new Scanner(System.in);
 
-		for (byte count = 1; count < vetorBytes.length; count += 2) {
-			System.out.println("Inicializando a posicao " + (count + 1) + " no indice " + count);
-			vetorBytes[count] = input.nextByte();
+		for (byte count = 1; count < bytesArray.length; count += 2) {
+			System.out.println("Initializing the position " + (count + 1) + " on the index " + count);
+			bytesArray[count] = input.nextByte();
 		}
 	}
 
-	public static void definirTamanhoParaInicializar() {
-		Scanner entrada = new Scanner(System.in);
-		byte tamanho;
-		byte vetorBytes[];
-		System.out.println("Informe o tamanho do vetor");
-		tamanho = entrada.nextByte();
-		vetorBytes = new byte[tamanho];
-		for (byte contador = 0; contador < vetorBytes.length; contador++) {
-			System.out.println("Informe o valor para o item " + (contador + 1) + " no índice [" + contador + "]");
-			vetorBytes[contador] = entrada.nextByte();
+	public static void defineSizeInitialize() {
+		Scanner input = new Scanner(System.in);
+		byte size;
+		byte bytesArray[];
+		System.out.println("Enter the array size:");
+		size = input.nextByte();
+		bytesArray = new byte[size];
+		for (byte counter = 0; counter < bytesArray.length; counter++) {
+			System.out.println("Enter the value for " + (counter + 1) + " on the index [" + counter + "]");
+			bytesArray[counter] = input.nextByte();
 
 		}
 
 	}
 
-	private static void percorrerVetorInicializadoCrescenteDecrescente() {
-		byte vetorInt[] = { 12, 28, 37, 59, 6 };
-		for (byte count = 0; count < vetorInt.length; count++) {
-			System.out.println(vetorInt[count]);
+	private static void AscDescInitializeArray() {
+		byte intArray[] = { 12, 28, 37, 59, 6 };
+		for (byte count = 0; count < intArray.length; count++) {
+			System.out.println(intArray[count]);
 
 		}
 		System.out.println("----");
-		for (byte count = (byte) (vetorInt.length - 1); count >= 0; count--) {
-			// começando com o tamanho -1, pq o indice sempre tem um valor a menos
-			// condição de permanencia, enquanto meu contado for maior que 0, comcei com
-			// valor alto e pretendo para ao chegar no zero
-			// como uma repetição decrescente utilizo o dcremento no contador
-			System.out.println(vetorInt[count]);
+		for (byte count = (byte) (intArray.length - 1); count >= 0; count--) {
+			System.out.println(intArray[count]);
 		}
 	}
 
-	public static void exibirVetorInteirosNaoInicializado() {
-		byte vetorBytes[] = new byte[10];
-		Scanner entrada = new Scanner(System.in);
-		String resposta;
+	public static void showIntergerNotInitializeArray() {
+		byte bytesArray[] = new byte[10];
+		Scanner input = new Scanner(System.in);
+		String answer;
 		byte index = 0;
 
 		do {
-			System.out.println("Informe um valor para o indice [" + index + "]");
-			vetorBytes[index] = entrada.nextByte();
-			System.out.println("Gostaria de inicializar outro indice?");
-			resposta = entrada.next();
+			System.out.println("Enter a value to the index [" + index + "]");
+			bytesArray[index] = input.nextByte();
+			System.out.println("Would you like to initialize another index?");
+			answer = input.next();
 
-			if (resposta.equalsIgnoreCase("sim")) {
+			if (answer.equalsIgnoreCase("yes")) {
 				do {
-					System.out.println("Informe um indice válido entre 0 e " + (vetorBytes.length - 1));
-					index = entrada.nextByte();// Se o usuario digitar um valor valido esse index sera usado no meu DO
-												// principal, onde a logica se repete
-				} while (index < 0 || index >= vetorBytes.length);// A posicao escolhida nao pode ser menor do que 0 nem
-																	// o tamanho do vetor ou superior
-				// Exemplo: O range valido é de 0 a 9, qualquer numero alem disso fica preso
-				// nesse loop
+					System.out.println("Enter a valid index between 0 and " + (bytesArray.length - 1));
+					index = input.nextByte();
+				} while (index < 0 || index >= bytesArray.length);
 			}
-		} while (resposta.equalsIgnoreCase("sim"));
-		for (byte contador = 0; contador < vetorBytes.length; contador++) {
-			System.out.println("vetorBytes[" + contador + "] = " + vetorBytes[contador]);
+		} while (answer.equalsIgnoreCase("yes"));
+		for (byte counter = 0; counter < bytesArray.length; counter++) {
+			System.out.println("bytesArray[" + counter + "] = " + bytesArray[counter]);
 		}
 
 	}

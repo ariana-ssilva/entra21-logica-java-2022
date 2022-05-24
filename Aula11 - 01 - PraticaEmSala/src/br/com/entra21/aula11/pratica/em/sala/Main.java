@@ -63,7 +63,7 @@ public class Main {
 					runCalculatingAverage();
 					break;
 				default:
-					System.out.println("Escolha uma op��o v�lida!");
+					System.out.println("Choose a valid option!");
 					break;
 			}
 

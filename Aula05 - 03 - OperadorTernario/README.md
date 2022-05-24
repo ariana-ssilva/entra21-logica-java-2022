@@ -12,3 +12,11 @@ res=(num1>num2) ? (num1+num2):(num1-num2)
 
 /*Since num1<num2, the second operation is performed: res = num1-num2 = -10*/
 ```
+
+<br>
+
+<center>
+
+![Ternary Operator](/gif_img/Conditional-or-Ternary-Operator-__-in-Java.jpg)
+
+</center>

@@ -8,7 +8,7 @@ Display the result and in which weight range it is;
 | :-------: | :------------: |
 |< 18.5     | Underweight    |
 |18.5 - 24.9| Normal Range   |
-|25.0 - 30| Overweight       |
+|25.0 - 30  | Overweight     |
 |30.0 - 34.9| Obese Class I  |
 |35.0 - 39.9| Obese Class II |
 | > 40      | Obese Class III|

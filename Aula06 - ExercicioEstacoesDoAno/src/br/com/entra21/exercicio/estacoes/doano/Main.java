@@ -8,7 +8,7 @@ public class Main {
 		/*
 		 * Show a list of options to the user choose one and for each
 		 * choice return a different message.
-		 *  What is your favorite season of the year?
+		 *  What is your favorite season?
 		 * 1 = spring 2 = autumn 3 = winter 4 = summer
 		 */
 		

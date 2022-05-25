@@ -2,7 +2,7 @@
 
 <center>
 
-![Full stack Java course](/gif_img/cover.jpeg)
+![Full stack Java course](/gif_img/cover.png)
 
 </center>
 

@@ -1,4 +1,4 @@
-# Exercise
+# Exercises using loops
 
 >1. Write an algorithm that calculates the sum of the numbers from 1 to 15 and breaks the line every 5 repetitions.
 
@@ -23,7 +23,11 @@
 
 <br>
 
+<center>
 
-<!-- gif -->
+![Exercises using loops](/gif_img/11.1.gif)
+
+<br>
+</center>
 
 [![Run Code](https://img.shields.io/badge/-Run%20%20code%20-green?style=flat&logo=replit&logoColor=white)](https://replit.com/@ariana-ssilva/FreeVerifiableSource#Main.java)&nbsp;

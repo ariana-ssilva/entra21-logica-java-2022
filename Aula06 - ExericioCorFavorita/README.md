@@ -18,4 +18,11 @@ The options are:
 
 <br>
 
+<center>
+
+![Choose your favourite color](/gif_img/6.3.gif)
+
+</center>
+
+
 [![Run Code](https://img.shields.io/badge/-Run%20%20code%20-green?style=flat&logo=replit&logoColor=white)](https://replit.com/@ariana-ssilva/LightyellowAttachedPlot#Main.java)&nbsp;

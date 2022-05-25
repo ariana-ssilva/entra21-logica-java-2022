@@ -3,95 +3,86 @@ package br.com.entra21.aula14.matrizes;
 import java.util.Scanner;
 
 public class Main {
-static Scanner entrada = new Scanner(System.in);
-// definindo minha variavel entrada do tipo Scanner acessivel em toda a classe
-// Main
-// como o metodo main é static, tanto metodos ou variaveis devem ser static para
-// se relacionarem com o metodo main
-
+static Scanner input = new Scanner(System.in);
  public static void main(String[] args) {
 
- byte opcao;
+ byte option;
 
  do {
-System.out.println(escreverMenuMatrizes());
-opcao = entrada.nextByte();
-switch (opcao) {
+System.out.println(runMenu());
+option = input.nextByte();
+switch (option) {
 case 0:
-System.out.println("Saindo...");
+System.out.println("Exiting...");
 break;
 case 1:
-aprenderMatrizesSimples();
+learnMultiArray();
 break;
 case 2:
-aprenderMatrizesInicializadas();
+learnMultiArrayInitialized();
 break;
 default:
-System.out.println("Para!!! O menu ta simples , só 1 ou 2");
+System.out.println("C'mon, 1 or two, it's not that hard!");
 break;
 
  }
 
- } while (opcao != 0);
-System.out.println("Fim da aula sobre matrizes");
+ } while (option != 0);
+System.out.println("Thanks for running the code!");
 
  }
 
- private static String escreverMenuMatrizes() {
-String conteudoMenu = "";
-conteudoMenu += "Escolha uma opção para aprender:\n";
-conteudoMenu += "\t1 - Inicializando matrizes com tamanho definidos\n";
-conteudoMenu += "\t2 - Inicializando matrizes com valores predeterminados\n";
-return conteudoMenu;
+ private static String runMenu() {
+String menuContent = "";
+menuContent += "Choose an option:\n";
+menuContent += "\t1 - Initializing multidimensional array defining the size:\n";
+menuContent += "\t2 - Initializing multidimensional array initialized\n";
+return menuContent;
 }
 
- private static void aprenderMatrizesSimples() {
-System.out.println("Aprendendo sobre matrizes simples");
+ private static void learnMultiArray() {
+System.out.println("Learning Multidimensional Arrray");
 
- System.out.println("Armazenar as 3 notas de todos os 10 alunos");
+ System.out.println("Store the 3 grades of  10 students");
 float notas[][];
-notas = new float[10][5];// aqui eu defini diretamente no código o tamanho da minha matriz
-// primeiro indice é a quantidade de vetores
-// segundo indice é a capacidade de cada vetor
-// apenas no nivel ficam os valores
+notas = new float[10][5];
 
- byte quantidadeAlunos, quantidadeNotas;
-System.out.println("Informe a quantidade de alunos");
-quantidadeAlunos = entrada.nextByte();
+ byte studentsAmount, grades;
+System.out.println("Enter the amount of students");
+studentsAmount = input.nextByte();
 
- System.out.println("Informe a quantidade de notas para cada aluno");
-quantidadeNotas = entrada.nextByte();
+ System.out.println("Enter the amount of grades for each student");
+grades = input.nextByte();
 
- // quem decide o tamanho da minha matriz é o usuario
-float novasNotas[][] = new float[quantidadeAlunos][quantidadeNotas];
+float updatingGrades[][] = new float[studentsAmount][grades];
 
- for (byte aluno = 0; aluno < novasNotas.length; aluno++) {
-System.out.println("Nessa posição [" + aluno + "] temos " + novasNotas[aluno].length + " notas");
-for (byte nota = 0; nota < novasNotas[aluno].length; nota++) {
-System.out.println("\t valor da nota [" + nota + "] ===> " + novasNotas[aluno][nota]);
+ for (byte student = 0; student < updatingGrades.length; student++) {
+System.out.println("On this position [" + student + "] there are " + updatingGrades[student].length + " grades");
+for (byte grade = 0; grade < updatingGrades[student].length; grade++) {
+System.out.println("\t The grade [" + grade + "] ===> " + updatingGrades[student][grade]);
 }
 
  }
 
- System.out.println("Confiando que tenho no minimo 2 alunos");
-System.out.println("Olha as notas do segundo aluno");
-System.out.println(novasNotas[1][0]);
-System.out.println(novasNotas[1][1]);
-System.out.println(novasNotas[1][2]);
+ System.out.println("Confiando que tenho no minimo 2 students");
+System.out.println("Olha as notas do segundo student");
+System.out.println(updatingGrades[1][0]);
+System.out.println(updatingGrades[1][1]);
+System.out.println(updatingGrades[1][2]);
 
  }
 
- private static void aprenderMatrizesInicializadas() {
-System.out.println("Aprendendo sobre matrizes inicializadas e irregulares");
+ private static void learnMultiArrayInitialized() {
+System.out.println("Learning about initialized and  irregular Multidimensional Array");
 
- float salarioAlunos[][] = { { 1000, 1250.50f, 2500.35f }, { 2600, 3500, 4500 }, { 50000, 150000, 2000000 } };
+ float salariostudents[][] = { { 1000, 1250.50f, 2500.35f }, { 2600, 3500, 4500 }, { 50000, 150000, 2000000 } };
 
  byte matrizIrregular[][] = { { 1, 2, 3, 4, 5, 6, 7 }, { 4, 3, 2, 1 }, { 10, 12 }, { -127, 0, 127 }, };
 
- String ementa[][] = { { "Metodologias ágeis", "introdução", "metodologias", "git" },
-{ "lógica com java", "variaveis", "constantes", "comentários", "desvios condicionais",
-"laços de repetição" },
-{ "POO", "Classes", "Objetos", "Herança", "Polimorfismo", "Encapsulamento", "conceitos" },
+ String ementa[][] = { { "Portuguese", "Art", "Java", "git" },
+{ "Logic", "cariables", "constants", "comments", "readme files",
+"loops" },
+{ "OOP", "code", "objects", },
 
  };
 

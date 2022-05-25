@@ -26,8 +26,14 @@ I 'll recommend a song ...
 <br>
 <hr>
 
+
 <center>
+
+![Seasons](/gif_img/6.1.gif)
+
+</center>
+
+<br>
 
 [![Run Code](https://img.shields.io/badge/-Run%20%20code%20-green?style=flat&logo=replit&logoColor=white)](https://replit.com/@ariana-ssilva/SeasonsWithAM#Main.java)&nbsp;
 
-</center>

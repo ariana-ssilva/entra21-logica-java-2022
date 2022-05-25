@@ -27,6 +27,14 @@ from start to finish, from end to beginning and to display the values;
  "Would you like to initialize the value of one of the positions between 1 and SIZE?"
 If the answer is "yes", capture a position. Retry capture while index is not valid. If the answer is "no", exit and display all array values.
 
-<!-- gif -->
+<br>
+
+<center>
+
+![Exercises using array](/gif_img/13.1.gif)
+
+</center>
+
+<br>
 
 [![Run Code](https://img.shields.io/badge/-Run%20%20code%20-green?style=flat&logo=replit&logoColor=white)](https://replit.com/@ariana-ssilva/StandardElderlyPress#Main.java)&nbsp;

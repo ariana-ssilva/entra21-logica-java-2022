@@ -19,12 +19,14 @@ Options in the menu:
 
 > 4- Create an array with the size and capacity entered by the user and then ask the user to enter the respective values;
 
-> 5- Create an initialized integer array, to loop through from start to finish, from end to beginning and to display the values;
 
-> 6- Create an uninitialized integer array.Repeat indefinitely until the user answers "no" to the question 
-"Would you like to initialize the value of one of the positions between 1 and SIZE?"
-If the answer is "yes", capture all values ​​for that index. Retry capture to end of index capacity.
-If the answer is "no", exit repeat launches.Display all array values
+<center>
 
-<!-- gif -->
-<!-- botão -->
+![Multidimensional Array Exercices](/gif_img/15.1.gif)
+
+</center>
+
+<br>
+
+[![Run Code](https://img.shields.io/badge/-Run%20%20code%20-green?style=flat&logo=replit&logoColor=white)](https://replit.com/@ariana-ssilva/DarkturquoiseIdolizedArchitects#Main.java)&nbsp;
+

@@ -18,8 +18,8 @@ public class Main {
 			System.out.println(" 5 - Get name and age of 10 people and return the youngest's name");
 			System.out.println(" 6 - Working on it...");
 			System.out.println(" 7 - Working on it too...");
-			System.out.println(
-					" 8 - Write an algorithm that reads a sequence of numbers from the user and performs the sum of these numbers. Terminate execution when a negative number is entered.");
+			System.out.println(" 8 - Write an algorithm that reads a sequence of numbers from the user and performs the "
+					+ "sum of these numbers. Terminate execution when a negative number is entered.");
 			System.out.println(" 9 - Get the amount of grades and calculate the average");
 			option = input.nextByte();
 			switch (option) {

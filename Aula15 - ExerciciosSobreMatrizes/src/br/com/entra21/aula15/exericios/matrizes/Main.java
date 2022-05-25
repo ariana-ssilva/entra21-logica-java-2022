@@ -25,19 +25,13 @@ public class Main {
 				break;
 
 			case 3:
-				criarMatrizes5vetores3posicoes();
+				createArray5x3();
 				break;
 
 			case 4:
-				solicitarTamanhoMatrizParaPreencher();
+				askMultiArraySize();
 				break;
-
-			case 5:
-				break;
-
-			case 6:
-				break;
-
+				
 			default:
 				System.out.println("Enter a valid option!");
 				break;
@@ -51,6 +45,8 @@ public class Main {
 		menu += "\n 0 - Exit";
 		menu += "\n 1 - Create a bidimensional array for each primitive type and display their size in console ";
 		menu += "\n 2 - Create a bidimensional initialized array for each primitive type and display their size in console";
+		menu += "\n 3- Create 1 array of 5 positions with 3 capacity items, for the user to feed these values";
+		menu += "\n 4- Create an array with the size and capacity entered by the user and then ask the user to enter the respective values";
 
 		return menu;
 	}
@@ -86,99 +82,85 @@ public class Main {
 	}
 
 	public static void runBidimensionalInitializedArray() {
-		char matrizChars[][] = { // quem define o tamanho de cada vetor é a incialização, que pode ser irregular.
-				{ 'A', 'E', 'V' }, { 'R', 'D', 'O' }, { 'F', 'F', 'C', 'A' }, // irregular porque tem tamanhos diferente
-																				// de index
-		};
-		boolean matrizBooleans[][] = { // quem define o tamanho de cada vetor é a incialização, que pode ser irregular.
-				{ true, false, true, false }, { true, false, true, false }, { true, false, true, false }, // regular
-		};
-		byte matrizBytes[][] = { // quem define o tamanho de cada vetor é a incialização, que pode ser irregular.
-				{ 10, 20, 30, 44, 50 }, { 11, 22, 33 }, { 13, 24 }, { 18 }, // irregular porque tem tamanhos diferente
-																			// de index
-		};
-		short matrizShorts[][] = { // quem define o tamanho de cada vetor é a incialização, que pode ser irregular.
-				{ 300, 400, 1000 }, { 500, 600, 100 }, { 1000, 4000, 5000 }, // regular porque todos a mesma capacidade
-																				// de itens por vetores
-		};
-		int matrizInts[][] = { // quem define o tamanho de cada vetor é a incialização, que pode ser irregular.
-				{ 100 }, { 200 }, { 10000 }, // regular porque todos a mesma capacidade de itens por vetores
-		};
-		long matrizLongs[][] = { // quem define o tamanho de cada vetor é a incialização, que pode ser irregular.
-				{ 300, 400, 500, 600 }, { 10000000, 5000000, 300 }, { 1000000, 100000 }, // irregular porque tem
-																							// tamanhos diferente de
-																							// index
-		};
-		float matrizFloats[][] = { // quem define o tamanho de cada vetor é a incialização, que pode ser irregular.
-				{ 100000f }, { 20000f, 30000f }, { 30000000000f }, // irregular porque tem tamanhos diferente de index
-		};
-		double matrizDouble[][] = { // quem define o tamanho de cada vetor é a incialização, que pode ser irregular.
-				{ 100, 400, 500 }, { 100, 200, 400 }, { 1000, 4000, 5000, 6000 }, // irregular porque tem tamanhos
-																					// diferente de index
-		}
+		char charsArray[][] = { { 'A', 'E', 'V' }, { 'R', 'D', 'O' }, { 'F', 'F', 'C', 'A' }, };
+		
+		boolean booleansArray[][] = { { true, false, true, false }, { true, false, true, false },
+				{ true, false, true, false }, };
+		
+		byte bytesArray[][] = { { 10, 20, 30, 44, 50 }, { 11, 22, 33 }, { 13, 24 }, { 18 }, };
+		
+		short shortsArray[][] = { { 300, 400, 1000 }, { 500, 600, 100 }, { 1000, 4000, 5000 }, };
+		
+		int intsArray[][] = { { 100 }, { 200 }, { 10000 }, };
+		
+		long longsArray[][] = { { 300, 400, 500, 600 }, { 10000000, 5000000, 300 }, { 1000000, 100000 }, };
+		
+		float floatsArray[][] = { { 100000f }, { 20000f, 30000f }, { 30000000000f }, };
+		
+		double doublesArray[][] = { { 100, 400, 500 }, { 100, 200, 400 }, { 1000, 4000, 5000, 6000 }, };
 	}
-	public static void criarMatrizes5vetores3posicoes() {
 
-		byte matrizBytes[][] = new byte[5][3];
+	public static void createArray5x3() {
 
-		System.out.println("Para o primeiro vetor, informe o primeiro valor:");
-		matrizBytes[0][0] = input.nextByte();
+		byte bytesMultiArray[][] = new byte[5][3];
+		System.out.println("Enter the first value for the first array:");
+		bytesMultiArray[0][0] = input.nextByte();
 
-		System.out.println("Para o primeiro vetor, informe o segundo valor:");
-		matrizBytes[0][1] = input.nextByte();
+		System.out.println("Enter the second value for the first array:");
+		bytesMultiArray[0][1] = input.nextByte();
 
-		System.out.println("Para o primeiro vetor, informe o terceiro valor:");
-		matrizBytes[0][2] = input.nextByte();
+		System.out.println("Enter the third value for the first array:");
+		bytesMultiArray[0][2] = input.nextByte();
 
 		// --------------------------------------------------------------------
 
-		System.out.println("Para o segundo vetor, informe o primeiro valor:");
-		matrizBytes[1][0] = input.nextByte();
+		System.out.println("Enter the first value for the second array:");
+		bytesMultiArray[1][0] = input.nextByte();
 
-		System.out.println("Para o segundo vetor, informe o segundo valor:");
-		matrizBytes[1][1] = input.nextByte();
+		System.out.println("Enter the second value for the second array:");
+		bytesMultiArray[1][1] = input.nextByte();
 
-		System.out.println("Para o segundo vetor, informe o terceiro valor:");
-		matrizBytes[1][2] = input.nextByte();
+		System.out.println("Enter the third value for the second array:");
+		bytesMultiArray[1][2] = input.nextByte();
 
-		for (byte vetor = 2; vetor < matrizBytes.length; vetor++) {// [2][3][4]// Continuando minha captura com FOR
+		for (byte array = 2; array < bytesMultiArray.length; array++) {// [2][3][4]// 
 
-			for (byte detalhe = 0; detalhe < matrizBytes[vetor].length; detalhe++) {
-				System.out.println("Para o " + (vetor + 1) + "ª vetor informe o " + (detalhe + 1) + "ª valor");
-				matrizBytes[vetor][detalhe] = input.nextByte();
+			for (byte detail = 0; detail < bytesMultiArray[array].length; detail++) {
+				System.out.println("For " + (array + 1) + " array  " + (detail + 1) + " the value.");
+				bytesMultiArray[array][detail] = input.nextByte();
 
 			}
 		}
 
 	}
 
-	public static void solicitarTamanhoMatrizParaPreencher() {
+	public static void askMultiArraySize() {
 
-		byte tamanhoVetor, tamanhoDetalhe;
-		byte matrizBytes[][];
+		byte arraySize, detailSize;
+		byte bytesMultiArray[][];
 
-		System.out.println("Quantos vetores vc quer na sua matriz: ");
-		tamanhoVetor = input.nextByte();
-		System.out.println("Quantos itens vc quer em cada vetor: ");
-		tamanhoDetalhe = input.nextByte();
+		System.out.println("How many array fo you want to a multidimensional Array:: ");
+		arraySize = input.nextByte();
+		System.out.println("How many itens for each array?");
+		detailSize = input.nextByte();
 
-		matrizBytes = new byte[tamanhoVetor][tamanhoDetalhe];
+		bytesMultiArray = new byte[arraySize][detailSize];
 
-		for (byte vetor = 0; vetor < matrizBytes.length; vetor++) {
+		for (byte array = 0; array < bytesMultiArray.length; array++) {
 
-			for (byte detalhe = 0; detalhe < matrizBytes[vetor].length; detalhe++) {
+			for (byte detail = 0; detail < bytesMultiArray[array].length; detail++) {
 
-				System.out.println("Para o indice [" + vetor + "] detalhe [" + detalhe + "] informe o valor ");
-				matrizBytes[vetor][detalhe] = input.nextByte();
+				System.out.println("For the index [" + array + "] detail [" + detail + "] ,  enter the value ");
+				bytesMultiArray[array][detail] = input.nextByte();
 			}
 		}
 
-		for (byte vetor = 0; vetor < matrizBytes.length; vetor++) {
+		for (byte array = 0; array < bytesMultiArray.length; array++) {
 
-			for (byte detalhe = 0; detalhe < matrizBytes[vetor].length; detalhe++) {
+			for (byte detail = 0; detail < bytesMultiArray[array].length; detail++) {
 
 				System.out.println(
-						"Matriz bytes [" + vetor + "] detalhe [" + detalhe + "] ==> " + matrizBytes[vetor][detalhe]);
+						"Multidimensional bytesArray [" + array + "] detail [" + detail + "] ==> " + bytesMultiArray[array][detail]);
 
 			}
 		}

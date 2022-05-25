@@ -13,7 +13,12 @@ public class Main {
 	String option;
 	Scanner enter = new Scanner(System.in);
 
-	System.out.println("Choose your favourite color and type it");System.out.println("I 'll tell you a fun fact about it... ");System.out.println("Green");System.out.println("Blue");System.out.println("Yellow");System.out.println("Red");
+	System.out.println("Choose your favourite color and type it");
+	System.out.println("I 'll tell you a fun fact about it... "); 
+	System.out.println("Green");
+	System.out.println("Blue");
+	System.out.println("Yellow");
+	System.out.println("Red");
 
 	System.out.println("Type here:");option=enter.nextLine();
 

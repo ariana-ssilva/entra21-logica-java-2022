@@ -2,7 +2,11 @@
 
 <center>
 
-![Full stack Java course](/gif_img/cover.png)
+## 🧠 Logic Programming 🧠
+
+<br>
+
+![Full stack Java course](/gif_img/Logica.png)
 
 </center>
 
